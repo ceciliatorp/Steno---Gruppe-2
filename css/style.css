@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #192EE6;
+    font-family:"Quantico";
+}
+
+
+/* Styling af Spil 1 */
+
+.spil-1 {
+    margin: 40px, 20px;
+    padding: 2%;
+}
+
+/* Alt styling af H1. Samme styling er gentaget for h2/h3 med lidt forskel i str/farver */
+.spil-1 h1 {
+    color: #D0FF14;
+    font-size: 5vw;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.spil-1 h2 {
+    color: whitesmoke;
+    font-size: 3vw;
+    font-weight: 100;
+    text-align: center;
+}
+
+.spil-1 h3 {
+    color: #D0FF14;
+    font-size: 3vw;
+    font-weight: 100;
+}
