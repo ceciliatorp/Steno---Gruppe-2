@@ -173,12 +173,11 @@ grid-row-start: 3;
 
 
 .spil-2 {
-    display: grid;
+    display: grid; /* Siden styles ved hjælp af grid */
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 20% 20%;
 }
 
-.spil-2 {
+.spil-2 h2, .spil-2 h3, .spil-2 p {
     color: #D0FF14;
     font-weight: 100;
 }
@@ -188,40 +187,70 @@ grid-row-start: 3;
 
 .page-left {
     grid-column-start: 1;
+    border-right-style: dotted;  /* dotted for at have en streg til at opdele siderne */
+    border-color: #D0FE1A; 
 
 }
 
 .page-left {
-    display: inline-grid;
+    display: inline-grid; /* in-line grid bruges til at kontrollere design af boksene inde i det store grid på siden*/
     grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    padding: 3%;
+    margin: 10px 10px;
 }
 
 /****** Styling af boks 1 */
 .boks-1 {
     grid-column-start: 1;
     grid-row-start: 1;
+    padding: 5%;
+    align-items: center;
+}
+
+.boks-1 h2 {
+    font-size: 5vh;
 }
 
 .sticker-1 {
     width: auto;
     height: 30vh;
+    align-items: center;
+    justify-content: center;
 }
 
 /****** Styling af boks 2 */
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
+    padding: 5%;
+}
+
+.boks-2 h2 {
+    font-size: 10vh;
+}
+
+.boks-2 p {
+    font-size: 3vh;
 }
 
 .sticker-2 {
     width: auto;
-    height: 30vh;
+    height: 20vh;
 }
 
 /****** Styling af boks 3 */
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
+    padding: 4%;
+}
+
+.boks-3 h2 {
+    font-size: 10vh;
+}
+.boks-2 p {
+    font-size: 3vh;
 }
 
 .sticker-3 {
@@ -233,6 +262,14 @@ grid-row-start: 3;
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
+    padding: 4%;
+}
+
+.boks-4 h2 {
+    font-size: 10vh;
+}
+.boks-2 p {
+    font-size: 3vh;
 }
 
 .sticker-4 {
@@ -244,6 +281,7 @@ grid-row-start: 3;
 .boks-5 {
     grid-column-start: 2;
     grid-row-start: 3;
+    padding: 4%;
 }
 
 .sticker-5 {
