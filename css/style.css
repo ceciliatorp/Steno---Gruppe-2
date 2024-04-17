@@ -161,6 +161,16 @@ grid-row-start: 3;
 
 
 
+/* Styling af spil 2 - sammenlign energikilder */
+
+
+.page-left {
+    background-color: #192EE6;
+}
+
+.page-right {
+    background-color: #D0FF14;
+}
 
 
 
