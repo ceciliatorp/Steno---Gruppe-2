@@ -9,6 +9,9 @@ body {
 }
 
 
+
+/****************** Spil 1 *********************/
+
 /* Styling af Spil 1 */
 
 .spil-1 {
@@ -71,15 +74,97 @@ grid-row-start: 3;
 
 
 
+
+
+/****************** Spil 2 *********************/
+
 /* Styling af spil 2 - sammenlign energikilder */
 
 
-.page-left {
-    background-color: #192EE6;
+
+.spil-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 20% 20%;
 }
 
+.spil-2 {
+    color: #D0FF14;
+}
+
+
+/* Styling af venstre side "Atomkraftværk" */
+
+.page-left {
+    grid-column-start: 1;
+
+}
+
+.page-left {
+    display: inline-grid;
+    grid-template-columns: 2fr;
+}
+
+/****** Styling af boks 1 */
+.boks-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.sticker-1 {
+    width: auto;
+    height: 30vh;
+}
+
+/****** Styling af boks 2 */
+.boks-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.sticker-2 {
+    width: auto;
+    height: 30vh;
+}
+
+/****** Styling af boks 3 */
+.boks-3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.sticker-3 {
+    width: auto;
+    height: 30vh;
+}
+
+/****** Styling af boks 4 */
+.boks-4 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.sticker-4 {
+    width: auto;
+    height: 30vh;
+}
+
+/* Styling af boks 5 */
+.boks-5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.sticker-5 {
+    width: auto;
+    height: 30vh;
+}
+
+
+/* Styling af venstre side "Atomkraftværk" */
+
 .page-right {
-    background-color: #D0FF14;
+    grid-column-start: 2;
 }
 
 
