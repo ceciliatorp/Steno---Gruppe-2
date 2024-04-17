@@ -3,11 +3,38 @@
     padding: 0;
 }
 
+:root {
+    --blue:#192EE6;
+    --green: #D0FE1A;
+    --pink: #E474EE;
+}
+
 body {
-    background-color: #192EE6;
+    background-color: var(--blue);
     font-family:"Quantico";
 }
 
+h1, h2, h3{
+    color: white;
+}
+
+/********** Forsiden **********/
+
+.overskrift{
+    padding: 50px;
+    font-size: 4.5rem;
+}
+
+.underoverskrift{
+    padding: 29px 50px;
+    font-size: 1.2rem;
+}
+
+#forskelligt {
+    font-weight: bold;
+    color: var(--green);
+    font-size: 6rem;
+}
 
 
 /****************** Spil 1 *********************/
@@ -21,7 +48,7 @@ body {
 
 /* Alt styling af H1. Samme styling er gentaget for h2/h3 med lidt forskel i str/farver */
 .spil-1 h1 {
-    color: #D0FF14;
+    color: var(--green);
     font-size: 5vw;
     font-weight: 100;
     text-align: center;
@@ -36,7 +63,7 @@ body {
 }
 
 .spil-1 h3 {
-    color: #D0FF14;
+    color: var(--green);
     font-size: 3vw;
     font-weight: 100;
 }
@@ -71,6 +98,69 @@ grid-row-start: 3;
     grid-row-start:2; 
 }
 
+/* Cirkel progessbar */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+.circle-wrap {
+  margin: 150px auto;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
 
 
 
