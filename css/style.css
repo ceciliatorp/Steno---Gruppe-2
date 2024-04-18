@@ -27,7 +27,7 @@ h1, h2, h3{
 }
 
 .underoverskrift{
-    padding: 29px 50px;
+    padding: 20px 50px;
     font-size: 1.2rem;
 }
 
@@ -42,6 +42,86 @@ h1, h2, h3{
     right: 20px; /* Afstand fra højre kant af containeren */
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
+}
+
+.uran {
+    position: absolute;
+    top: 270px; /* Afstand fra bunden af containeren */
+    left: 740px; /* Afstand fra højre kant af containeren */
+    max-width: 200px; /* Juster størrelsen efter behov */
+    max-height: 200px; /* Juster størrelsen efter behov */
+}
+
+.uran1 {
+    position: absolute;
+    top: 20px; /* Afstand fra bunden af containeren */
+    left: 270px; /* Afstand fra højre kant af containeren */
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+}
+
+.uran2 {
+    position: absolute;
+    top: 500px; /* Afstand fra bunden af containeren */
+    left: 800px; /* Afstand fra højre kant af containeren */
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+}
+
+.uran3 {
+    position: absolute;
+    bottom: 70px; /* Afstand fra bunden af containeren */
+    left: 200px; /* Afstand fra højre kant af containeren */
+    max-width: 40px; /* Juster størrelsen efter behov */
+    max-height: 40px; /* Juster størrelsen efter behov */
+}
+
+.uran4 {
+    position: absolute;
+    bottom: 10px; /* Afstand fra bunden af containeren */
+    left: 300px; /* Afstand fra højre kant af containeren */
+    max-width: 90px; /* Juster størrelsen efter behov */
+    max-height: 90px; /* Juster størrelsen efter behov */
+}
+
+/****************** Stem  **********************/
+
+/* CSS til styling af billeder og andre elementer */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+img {
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/****************** cirkeldiagram  **********************/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+/* Stil for cirkeldiagram */
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 

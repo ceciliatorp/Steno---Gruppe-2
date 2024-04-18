@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klik Tæller</title>
+    <!-- Tilføj reference til CSS-filen -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Klik Tæller</h1>
+    <h2>Klik på et billede for at tælle</h2>
+    <div>
+        <!-- Billede 1 -->
+        <img src="billede1.jpg" alt="Billede 1" id="image1" onclick="countClick(1)">
+        <!-- Antal klik for billede 1 -->
+        <div id="clickCount1" class="click-count"></div>
+        
+        <!-- Billede 2 -->
+        <img src="billede2.jpg" alt="Billede 2" id="image2" onclick="countClick(2)">
+        <!-- Antal klik for billede 2 -->
+        <div id="clickCount2" class="click-count"></div>
+    </div>
+    
+    <!-- Knappen til at navigere til næste side -->
+    <button onclick="navigateToNextPage()">Vis cirkeldiagram</button>
+
+    <!-- Tilføj reference til JavaScript-filen -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
