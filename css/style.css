@@ -50,24 +50,24 @@ h1, h2, h3{
     align-items: center;
     width: 80%;
     margin: 20px auto;
+}
+.likert-scale label {
+    font-size: 2em;
     color: var(--green);
-  }
-  .likert-scale label {
-    font-size: 1.2em;
-    color: var(--green);
+}
 
-  }
-  .likert-scale input[type="range"] {
-    width: 80%;
+.likert-scale input[type="range"] {
+    width: 70%;
     margin: 0 10px;
-    color: var(--green);
+}
 
-  }
-  .likert-scale input[type="number"] {
+.likert-scale input[type="number"] {
     width: 50px;
-    color: var(--green);
+}
 
-  }
+#vote1{
+    background-color: var(--green);
+}
   
 .uran {
     position: absolute;
