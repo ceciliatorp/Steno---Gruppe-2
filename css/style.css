@@ -14,7 +14,7 @@ body {
     font-family:"Quantico";
 }
 
-h1, h2, h3{
+h1, h2, h3{ 
     color: white;
     font-weight: 100;
 }
@@ -43,6 +43,24 @@ h1, h2, h3{
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
 }
+
+.likert-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .likert-scale label {
+    font-size: 14px;
+  }
+  .likert-scale input[type="range"] {
+    width: 80%;
+    margin: 0 10px;
+  }
+  .likert-scale input[type="number"] {
+    width: 50px;
+  }
 
 
 /****************** Spil 1 *********************/
