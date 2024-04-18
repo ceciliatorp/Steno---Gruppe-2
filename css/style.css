@@ -343,9 +343,9 @@ grid-row-start: 3;
   margin: 150px auto;
   width: 150px;
   height: 150px;
-  background: #fefcff;
+  background: #e474ee48;
   border-radius: 50%;
-  border: 1px solid #cdcbd0;
+  border: 1px solid var(--pink) 0.6;
 }
 
 .circle-wrap .circle .mask,
@@ -364,12 +364,12 @@ grid-row-start: 3;
   width: 122px;
   height: 122px;
   border-radius: 50%;
-  background: #d2eaf1;
+  background: var(--blue);
   line-height: 120px;
   text-align: center;
   margin-top: 14px;
   margin-left: 14px;
-  color: #1e51dc;
+  color: var(--green);
   position: absolute;
   z-index: 100;
   font-weight: 700;
@@ -381,13 +381,13 @@ grid-row-start: 3;
 /* 3rd progress bar */
 .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #227ded;
+  background-color: #e474ee;
 }
 
 .mask.full,
 .circle .fill {
   animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
+  transform: rotate(25deg);
 }
 
 @keyframes fill{
@@ -395,7 +395,7 @@ grid-row-start: 3;
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(135deg);
+    transform: rotate(25deg);
   }
 }
 
