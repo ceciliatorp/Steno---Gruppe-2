@@ -511,7 +511,6 @@ grid-row-start: 3;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     padding: 3%;
-    margin: 10px 10px;
 }
 
 /****** Styling af boks 1 */
@@ -521,6 +520,7 @@ grid-row-start: 3;
     display: grid;
     justify-content: center;
     align-items: baseline;
+    padding: 5%;
 }
 
 .boks-1 h1 {
@@ -549,6 +549,7 @@ grid-row-start: 3;
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-2 h2 {
@@ -560,12 +561,12 @@ grid-row-start: 3;
 }
 
 .boks-2 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-2 {
     width: auto;
-    height: 12vh;
+    height: 10vh;
     margin: 5% 2%;
 }
 
@@ -573,31 +574,33 @@ grid-row-start: 3;
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-3 h2 {
     font-size: 8vh;
 }
 .boks-3 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-3 {
     width: auto;
-    height: 20vh;
+    height: 15vh;
 }
 
 /****** Styling af boks 4 */
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
+    padding: 5%;
 }
 
 .boks-4 h2 {
     font-size: 8vh;
 }
 .boks-4 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 /* Styling af boks 5 */
