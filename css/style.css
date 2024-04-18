@@ -45,7 +45,8 @@ h1, h2, h3{
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
 }
-
+/*****Styling af skala på forsiden*****/
+/*Den overordnet skala*/
 .likert-scale {
     display: flex;
     justify-content: space-between;
@@ -53,30 +54,51 @@ h1, h2, h3{
     width: 80%;
     margin: 20px auto;
 }
+
+/*tekst i enderne af skala*/
 .likert-scale label {
     font-size: 2em;
     color: var(--green);
 }
 
+/*Selve skalaen*/
 .likert-scale input[type="range"] {
     width: 70%;
     margin: 0 10px;
-}
-
-.likert-scale input[type="number"] {
-    width: 50px;
-}
-
-#vote1{
     background-color: var(--green);
 }
+
   
-.uran {
+.biguran {
     position: absolute;
-    top: 270px; /* Afstand fra bunden af containeren */
-    left: 740px; /* Afstand fra højre kant af containeren */
+    top: -300px; /* Afstand fra bunden af containeren */
+    left: 500px; /* Afstand fra højre kant af containeren */
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
+    animation: moveElement 15s linear forwards; /*Animation*/
+}
+
+@keyframes moveElement {
+    0% {
+      top: -200px; /* Starting point on the page */
+      left: 500px; /* Starting point on the page */
+    }
+
+    30%{
+        top: 400px;
+        left: 1000px;
+    }
+
+    60% {
+      top: -50px; /* Ending point on the page */
+      left: 1500px; /* Ending point on the page */
+    }
+
+    100% {
+        top: 800px; /* Ending point on the page */
+        left: 1650px; /* Ending point on the page */
+      }
+
 }
 
 .uran1 {
@@ -511,7 +533,6 @@ grid-row-start: 3;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     padding: 3%;
-    margin: 10px 10px;
 }
 
 /****** Styling af boks 1 */
@@ -521,6 +542,7 @@ grid-row-start: 3;
     display: grid;
     justify-content: center;
     align-items: baseline;
+    padding: 5%;
 }
 
 .boks-1 h1 {
@@ -549,6 +571,7 @@ grid-row-start: 3;
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-2 h2 {
@@ -560,12 +583,12 @@ grid-row-start: 3;
 }
 
 .boks-2 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-2 {
     width: auto;
-    height: 12vh;
+    height: 10vh;
     margin: 5% 2%;
 }
 
@@ -573,31 +596,33 @@ grid-row-start: 3;
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-3 h2 {
     font-size: 8vh;
 }
 .boks-3 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-3 {
     width: auto;
-    height: 20vh;
+    height: 15vh;
 }
 
 /****** Styling af boks 4 */
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
+    padding: 5%;
 }
 
 .boks-4 h2 {
     font-size: 8vh;
 }
 .boks-4 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 /* Styling af boks 5 */
