@@ -106,18 +106,7 @@ h1, h2, h3{
 /****************** Stem  **********************/
 
 /* CSS til styling af billeder og andre elementer */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
 
-h1 {
-    margin-top: 50px;
-}
-
-h2 {
-    margin-bottom: 30px;
-}
 
 img {
     width: 200px;
@@ -127,14 +116,6 @@ img {
 
 /****************** cirkeldiagram  **********************/
 
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-h1 {
-    margin-top: 50px;
-}
 
 /* Stil for cirkeldiagram */
 canvas {
