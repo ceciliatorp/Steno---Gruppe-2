@@ -1,5 +1,27 @@
 'use strict';
 
+// Stem
+
+// Funktion til at tælle klik på billederne
+function countClick(imageNumber) {
+    // Hent det aktuelle antal klik fra localStorage
+    var clicks = localStorage.getItem('image_' + imageNumber);
+    // Hvis der ikke er nogen klik endnu, sæt antallet til 1, ellers inkrementer det
+    clicks = clicks ? parseInt(clicks) + 1 : 1;
+    // Gem antallet af klik i localStorage
+    localStorage.setItem('image_' + imageNumber, clicks);
+    // Opdater antallet af klik på skærmen
+    document.getElementById('clickCount' + imageNumber).innerText = 'Antal klik: ' + clicks;
+}
+
+// Funktion til at navigere til næste side
+function navigateToNextPage() {
+    window.location.href = '../html-anna/cirkeldiagram.html'; // Skift 'cirkeldiagram.html' til navnet på din næste side
+}
+
+
+// Slider
+
 var currentIndex = 0;
     var slides = document.querySelectorAll('.slide');
     var visibleSlides = 3; // Number of slides visible at a time
