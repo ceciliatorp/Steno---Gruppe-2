@@ -8,22 +8,30 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Klik Tæller</h1>
-    <h2>Klik på et billede for at tælle</h2>
-    <div>
+    <h1 class="overskrift" class="center">HVAD TÆNKER I OM <br> <span id="forskelligt">ATOMKRAFT?</span> NU?</h1>
+    <h2 class="underoverskrift" class="center">TRYK JA TAK ELLER NEJ TAK, NÅR ALLE HAR SVARET KAN I GÅ VIDERE</h2>
+
+    <div class="stemme">
         <!-- Billede 1 -->
-        <img src="billede1.jpg" alt="Billede 1" id="image1" onclick="countClick(1)">
+        <img src="../img/ja-tak.png" alt="Billede 1" id="image1" onclick="countClick(1)">
         <!-- Antal klik for billede 1 -->
-        <div id="clickCount1" class="click-count"></div>
         
         <!-- Billede 2 -->
-        <img src="billede2.jpg" alt="Billede 2" id="image2" onclick="countClick(2)">
+        <img src="../img/nej-tak.png" alt="Billede 2" id="image2" onclick="countClick(2)">
         <!-- Antal klik for billede 2 -->
-        <div id="clickCount2" class="click-count"></div>
     </div>
+
+    <img src="../img/uran/uran.png" alt="" class="uran5">
+    <img src="../img/uran/uran2.png" alt="" class="uran6">
+    <img src="../img/uran/uran3.png" alt="" class="uran7">
+    <img src="../img/uran/uran4.png" alt="" class="uran8">
     
     <!-- Knappen til at navigere til næste side -->
-    <button onclick="navigateToNextPage()">Vis cirkeldiagram</button>
+    <!-- <button onclick="navigateToNextPage()">Vis cirkeldiagram</button> -->
+
+    <a href="cirkeldiagram.html" class="gae-videre">
+        <img src="../img/gae-videre.png" alt="Gå videre" class="gae-videre">
+    </a>
 
     <!-- Tilføj reference til JavaScript-filen -->
     <script src="../js/script.js"></script>
