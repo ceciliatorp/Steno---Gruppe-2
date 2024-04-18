@@ -50,6 +50,7 @@ h1, h2, h3{
     align-items: center;
     width: 80%;
     margin: 20px auto;
+    color: var(--green);
   }
   .likert-scale label {
     font-size: 14px;
@@ -61,6 +62,7 @@ h1, h2, h3{
   .likert-scale input[type="number"] {
     width: 50px;
   }
+  
 .uran {
     position: absolute;
     top: 270px; /* Afstand fra bunden af containeren */
