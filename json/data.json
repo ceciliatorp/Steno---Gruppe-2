@@ -3,3 +3,14 @@
         
     }
 ]
+
+
+{
+    "energikilder": [
+      {
+        "name": FOSSILE BRÆNDSTOFFER,
+        "price": "????",
+        "energy": "???", 
+        "CO2": "???????"
+      },]
+}
