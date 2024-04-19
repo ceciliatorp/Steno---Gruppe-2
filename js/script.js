@@ -72,13 +72,25 @@ var currentIndex = 0;
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    const energySource = data.energikilder[0]; // Assuming you want to display data for the first energy source
-    document.getElementById('energySource').textContent = energySource.name;
-    document.getElementById('energyPrice').textContent = "PRIS";
-    document.getElementById('energyPriceText').textContent = energySource.price;
-    document.getElementById('energy').textContent = "ENERGI";
-    document.getElementById('energyText').textContent = energySource.energy;
-    document.getElementById('Co2Text').textContent = energySource.CO2;
+    // Assuming you want to display data for the first energy source
+    const energySource = data[0];
+
+    // Update energy source name and image
+    document.getElementById('energySource').textContent = energySource.energikilde;
+    document.querySelector('.sticker-energikilde').src = "img/" + energySource.energikilde_billede;
+
+    // Update price
+    document.querySelector('.boks-2 h3').textContent = energySource.pris + " " + energySource.pris_enhed;
+
+    // Update energy text
+    document.getElementById('energyText').textContent = energySource.antal_text;
+
+    // Update CO2 text
+    document.getElementById('Co2Text').textContent = energySource.co2_text;
+
+    // Update graph (if applicable)
+    // Example: Update the percentage value in the circle graph
+    document.querySelector('.inside-circle').textContent = energySource.procent;
   })
   .catch(error => console.error('Error fetching data:', error));
 
