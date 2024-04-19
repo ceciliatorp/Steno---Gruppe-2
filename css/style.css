@@ -116,7 +116,7 @@ ved startstedet.*/
     max-width: 70px; /* Juster størrelsen efter behov */
     max-height: 70px; /* Juster størrelsen efter behov */
     opacity: 50%;
-    animation: moveAndRotateUran1 60s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateUran1 100s linear forwards; /*Animation bevægelse på side*/
 }
 
 @keyframes  moveAndRotateUran1 {
@@ -141,7 +141,7 @@ ved startstedet.*/
     max-width: 80px; /* Juster størrelsen efter behov */
     max-height: 80px; /* Juster størrelsen efter behov */
     opacity: 50%;
-    animation: moveAndRotateUran2 50s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateUran2 90s linear forwards; /*Animation bevægelse på side*/
 
 }
 
@@ -173,14 +173,14 @@ ved startstedet.*/
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
     opacity: 50%;
-    animation: moveAndRotateUran3 50s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateUran3 90s linear forwards; /*Animation bevægelse på side*/
 
 }
 
 @keyframes  moveAndRotateUran3 {
     0% {
-        top: 800px; /* Startsted fra toppen */
-        left: 10px; /* Startsted fra venstre */
+        top: 1000px; /* Startsted fra toppen */
+        left: 400px; /* Startsted fra venstre */
         transform: rotate(0deg); /*Drjening på element*/
       }
   
@@ -204,9 +204,103 @@ ved startstedet.*/
     left: 300px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateUran4 15s linear forwards; /*Animation bevægelse på side*/
-
+    opacity: 50%;
+    animation: moveAndRotateUran4 90s linear forwards; /*Animation bevægelse på side*/
 }
+
+@keyframes  moveAndRotateUran4 {
+    0% {
+        top: 900px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+      }
+  
+    70%{
+        top: 600px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    100%{
+        top: 900px; /* Startsted fra toppen */
+        left: 800px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+}
+
+/*uran5 styling including keyframes */
+.uran5 {
+    position: absolute;
+    bottom: 70px; /* Afstand fra bunden af containeren */
+    left: 200px; /* Afstand fra højre kant af containeren */
+    max-width: 70px; /* Juster størrelsen efter behov */
+    max-height: 70px; /* Juster størrelsen efter behov */
+    opacity: 50%;
+    animation: moveAndRotateUran5 100s linear forwards;
+}
+
+@keyframes moveAndRotateUran5{
+    0% {
+        top: 700px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 600px;
+        left: 600px;
+        transform: rotate(360deg);
+    }
+
+    70%{
+        top: 1000px;
+        left: 700px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        top: 600px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+}
+
+.uran6 {
+    position: absolute;
+    bottom: 70px; /* Afstand fra bunden af containeren */
+    left: 200px; /* Afstand fra højre kant af containeren */
+    max-width: 70px; /* Juster størrelsen efter behov */
+    max-height: 70px; /* Juster størrelsen efter behov */
+    opacity: 50%;
+    animation: moveAndRotateUran6 100s linear forwards;
+}
+
+@keyframes moveAndRotateUran6{
+    0% {
+        top: 600px;
+        left: 1000px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 1000px;
+        left: 600px;
+        transform: rotate(360deg);
+    }
+
+    70%{
+        top: 800px;
+        left: 300px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        top: 600px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+}
+
 
 /****************** Stem  **********************/
 
@@ -236,7 +330,7 @@ ved startstedet.*/
     transform: scale(1.1) rotate(5deg);
 }
 
-.uran5 {
+.uran1-2 {
     position: absolute;
     top: 100px; /* Afstand fra bunden af containeren */
     right: 150px; /* Afstand fra højre kant af containeren */
@@ -244,7 +338,7 @@ ved startstedet.*/
     max-height: 300px; /* Juster størrelsen efter behov */
 }
 
-.uran6 {
+.uran2-2 {
     position: absolute;
     top: 500px; /* Afstand fra bunden af containeren */
     left: 150px; /* Afstand fra højre kant af containeren */
@@ -252,7 +346,7 @@ ved startstedet.*/
     max-height: 100px; /* Juster størrelsen efter behov */
 }
 
-.uran7 {
+.uran3-2 {
     position: absolute;
     bottom: 80px; /* Afstand fra bunden af containeren */
     left: 900px; /* Afstand fra højre kant af containeren */
@@ -260,7 +354,7 @@ ved startstedet.*/
     max-height: 40px; /* Juster størrelsen efter behov */
 }
 
-.uran8 {
+.uran4-2 {
     position: absolute;
     bottom: 20px; /* Afstand fra bunden af containeren */
     left: 1000px; /* Afstand fra højre kant af containeren */
@@ -279,7 +373,7 @@ canvas {
     justify-content: center;
 }
 
-.uran5 {
+.uran1-3 {
     position: absolute;
     top: 100px; /* Afstand fra bunden af containeren */
     right: 150px; /* Afstand fra højre kant af containeren */
@@ -287,7 +381,7 @@ canvas {
     max-height: 300px; /* Juster størrelsen efter behov */
 }
 
-.uran6 {
+.uran2-3 {
     position: absolute;
     top: 500px; /* Afstand fra bunden af containeren */
     left: 150px; /* Afstand fra højre kant af containeren */
@@ -295,7 +389,7 @@ canvas {
     max-height: 100px; /* Juster størrelsen efter behov */
 }
 
-.uran7 {
+.uran3-3 {
     position: absolute;
     bottom: 80px; /* Afstand fra bunden af containeren */
     left: 900px; /* Afstand fra højre kant af containeren */
@@ -303,7 +397,7 @@ canvas {
     max-height: 40px; /* Juster størrelsen efter behov */
 }
 
-.uran8 {
+.uran4-3så {
     position: absolute;
     bottom: 20px; /* Afstand fra bunden af containeren */
     left: 1000px; /* Afstand fra højre kant af containeren */
