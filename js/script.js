@@ -43,17 +43,7 @@ var currentIndex = 0;
     window.location.href = "spil-1.html";
   };
 
-  // autoplay på video 2
-  var video = document.getElementById("Video2");
-  video.onended = function() {
-    window.location.href = "video/video3.mp4";
-  };
 
-  // autoplay på video 3
-  var video = document.getElementById("Video3");
-  video.onended = function() {
-    window.location.href = "video/video4.mp4";
-  };
 
   // autoplay på video 4
   var video = document.getElementById("Video4");
@@ -62,3 +52,12 @@ var currentIndex = 0;
   };
 
 
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('Video2');
+
+    video.addEventListener('ended', function () {
+        // Når den nuværende video er færdig, afspil næste video
+        window.location.href = 'video3.html'; // Ændr dette til navnet på den næste HTML-fil
+    });
+});
