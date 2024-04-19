@@ -35,3 +35,10 @@ var currentIndex = 0;
         var offset = currentIndex * -100 / visibleSlides + '%';
         document.getElementById('slider').style.top = offset;
     }
+
+
+// autoplay på spil 1
+  var video = document.getElementById("Video1");
+  video.onended = function() {
+    window.location.href = "spil-1.html";
+  };
