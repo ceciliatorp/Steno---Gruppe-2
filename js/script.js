@@ -46,14 +46,9 @@ var currentIndex = 0;
   // autoplay på video 2
   var video = document.getElementById("Video2");
   video.onended = function() {
-    window.location.href = "video/video3.mp4";
+    window.location.href = "video3.html";
   };
 
-  // autoplay på video 3
-  var video = document.getElementById("Video3");
-  video.onended = function() {
-    window.location.href = "video/video4.mp4";
-  };
 
   // autoplay på video 4
   var video = document.getElementById("Video4");
