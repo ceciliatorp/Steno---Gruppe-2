@@ -65,3 +65,21 @@ var currentIndex = 0;
         window.location.href = 'video3.html'; // Ændr dette til navnet på den næste HTML-fil
     });
 });
+
+
+// Link til JSON + Data 
+
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const energySource = data.energikilder[0]; // Assuming you want to display data for the first energy source
+    document.getElementById('energySource').textContent = energySource.name;
+    document.getElementById('energyPrice').textContent = "PRIS";
+    document.getElementById('energyPriceText').textContent = energySource.price;
+    document.getElementById('energy').textContent = "ENERGI";
+    document.getElementById('energyText').textContent = energySource.energy;
+    document.getElementById('Co2Text').textContent = energySource.CO2;
+  })
+  .catch(error => console.error('Error fetching data:', error));
+
+
