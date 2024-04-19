@@ -440,9 +440,9 @@ grid-row-start: 3;
   margin: 150px auto;
   width: 150px;
   height: 150px;
-  background: #fefcff;
+  background: #e474ee48;
   border-radius: 50%;
-  border: 1px solid #cdcbd0;
+  border: 1px solid var(--pink) 0.6;
 }
 
 .circle-wrap .circle .mask,
@@ -461,12 +461,12 @@ grid-row-start: 3;
   width: 122px;
   height: 122px;
   border-radius: 50%;
-  background: #d2eaf1;
+  background: var(--blue);
   line-height: 120px;
   text-align: center;
   margin-top: 14px;
   margin-left: 14px;
-  color: #1e51dc;
+  color: var(--green);
   position: absolute;
   z-index: 100;
   font-weight: 700;
@@ -478,13 +478,13 @@ grid-row-start: 3;
 /* 3rd progress bar */
 .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #227ded;
+  background-color: #e474ee;
 }
 
 .mask.full,
 .circle .fill {
   animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
+  transform: rotate(25deg);
 }
 
 @keyframes fill{
@@ -492,7 +492,7 @@ grid-row-start: 3;
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(135deg);
+    transform: rotate(25deg);
   }
 }
 
@@ -608,7 +608,6 @@ grid-row-start: 3;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     padding: 3%;
-    margin: 10px 10px;
 }
 
 /****** Styling af boks 1 */
@@ -618,6 +617,7 @@ grid-row-start: 3;
     display: grid;
     justify-content: center;
     align-items: baseline;
+    padding: 5%;
 }
 
 .boks-1 h1 {
@@ -646,6 +646,7 @@ grid-row-start: 3;
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-2 h2 {
@@ -657,12 +658,12 @@ grid-row-start: 3;
 }
 
 .boks-2 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-2 {
     width: auto;
-    height: 12vh;
+    height: 10vh;
     margin: 5% 2%;
 }
 
@@ -670,31 +671,33 @@ grid-row-start: 3;
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
+    padding: 5%;
 }
 
 .boks-3 h2 {
     font-size: 8vh;
 }
 .boks-3 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .sticker-3 {
     width: auto;
-    height: 20vh;
+    height: 15vh;
 }
 
 /****** Styling af boks 4 */
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
+    padding: 5%;
 }
 
 .boks-4 h2 {
     font-size: 8vh;
 }
 .boks-4 p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 /* Styling af boks 5 */
