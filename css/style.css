@@ -664,11 +664,14 @@ grid-row-start: 3;
 
 /* Styling af spil 2 - sammenlign energikilder */
 
+/* Spil to er opsat med css grid derfor vil følgende stykke være opdelt efter grid'ets opbygning. 
+Først kommer der det overordenede grid layout og derefter css tilhørende kolonner fra venstre mod høje. */
+
 
 
 .spil-2 {
     display: grid; /* Siden styles ved hjælp af grid */
-    grid-template-columns: 10% 45% 45%;
+    grid-template-columns: 10% 45% 45%; /* kun 10% af skærmen til slideren */
     grid-template-rows: auto;
 }
 
@@ -754,7 +757,8 @@ grid-row-start: 3;
 
 
 
-/* Styling af venstre side "Atomkraftværk" */
+/***** Styling af venstre side "Atomkraftværk" */
+/* CSS grid til opsætning af venstre side samt styling af overskriften på tilhørende side */
 
 .page-left {
     grid-column-start: 2;
@@ -770,7 +774,7 @@ grid-row-start: 3;
     padding: 3%;
 }
 
-/****** Styling af boks 1 */
+/****** Styling af boks 1 - ATOMKRAFTVÆRK OVERSKRIFT */
 .boks-1 {
     grid-column: 1 / 3; /* Span both columns */
     grid-row: 1; /* Place in the first row */
@@ -794,7 +798,6 @@ grid-row-start: 3;
     grid-column: 1 / 3;
 } 
 
-
 .sticker-1 {
     width: auto;
     height: 15vh;
@@ -802,11 +805,54 @@ grid-row-start: 3;
     grid-column: 1;
 }
 
+/***** Styling af højreside "anden energikilde" */
+/* CSS grid til opsætning af højre side samt styling af overskriften på tilhørende side */
+
+.page-right {
+    grid-column-start: 3;
+}
+
+.page-right{
+    display: inline-grid; /* in-line grid bruges til at kontrollere design af boksene inde i det store grid på siden*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 3%;
+}
+
+/****** Styling af boks 1 på højre side - OVERSKRIFT "indsæt energikilde" */
+
+.boks-1-energikilde {
+    grid-column: 1 / 3; /* Span both columns */
+    grid-row: 1; /* Place in the first row */
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5%;
+}
+
+.boks-1-energikilde h2 {
+    color: var(--green);
+    font-size: 5vh;
+    grid-row: 1;
+    grid-column: 2;
+} 
+
+.sticker-energikilde {
+    width: auto;
+    height: 15vh;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+
+/****** HER  BEGYNDER styling af de resterende grids på venstre OG højre side, da de er "ens" */
+
 /****** Styling af boks 2 */
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
-    padding: 5%;
+    padding: 4%;
+    margin-left: 4vh;
 }
 
 .boks-2 h2 {
@@ -831,7 +877,7 @@ grid-row-start: 3;
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
-    padding: 5%;
+    padding: 4%;
 }
 
 .boks-3 h2 {
@@ -850,7 +896,8 @@ grid-row-start: 3;
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
-    padding: 5%;
+    padding: 4%;
+    margin-left: 4vh;
 }
 
 .boks-4 h2 {
@@ -865,12 +912,10 @@ grid-row-start: 3;
     grid-column-start: 2;
     grid-row-start: 3;
 }
-
-
-/* Styling af venstre side "Atomkraftværk" */
-
-.page-right {
-    grid-column-start: 3;
+.circle-wrap {
+    display: inline-block;
+    margin: 5%;
+    padding: 2% 2%;
 }
 
 

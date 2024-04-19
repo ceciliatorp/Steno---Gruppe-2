@@ -35,3 +35,28 @@ var currentIndex = 0;
         var offset = currentIndex * -100 / visibleSlides + '%';
         document.getElementById('slider').style.top = offset;
     }
+
+
+// autoplay på spil 1
+  var video = document.getElementById("Video");
+  video.onended = function() {
+    window.location.href = "spil-1.html";
+  };
+
+  // autoplay på video 2
+  var video = document.getElementById("Video2");
+  video.onended = function() {
+    window.location.href = "video/video3.mp4";
+  };
+
+  // autoplay på video 3
+  var video = document.getElementById("Video3");
+  video.onended = function() {
+    window.location.href = "video/video4.mp4";
+  };
+
+  // autoplay på video 4
+  var video = document.getElementById("Video4");
+  video.onended = function() {
+    window.location.href = "spil-1.html";
+  };
