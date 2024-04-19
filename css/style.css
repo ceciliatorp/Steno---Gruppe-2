@@ -179,8 +179,8 @@ ved startstedet.*/
 
 @keyframes  moveAndRotateUran3 {
     0% {
-        top: 800px; /* Startsted fra toppen */
-        left: 10px; /* Startsted fra venstre */
+        top: 1000px; /* Startsted fra toppen */
+        left: 400px; /* Startsted fra venstre */
         transform: rotate(0deg); /*Drjening på element*/
       }
   
@@ -255,6 +255,42 @@ ved startstedet.*/
     70%{
         top: 1000px;
         left: 700px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        top: 600px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+}
+
+.uran6 {
+    position: absolute;
+    bottom: 70px; /* Afstand fra bunden af containeren */
+    left: 200px; /* Afstand fra højre kant af containeren */
+    max-width: 70px; /* Juster størrelsen efter behov */
+    max-height: 70px; /* Juster størrelsen efter behov */
+    opacity: 50%;
+    animation: moveAndRotateUran6 100s linear forwards;
+}
+
+@keyframes moveAndRotateUran6{
+    0% {
+        top: 600px;
+        left: 1000px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 1000px;
+        left: 600px;
+        transform: rotate(360deg);
+    }
+
+    70%{
+        top: 800px;
+        left: 300px;
         transform: rotate(0deg);
     }
 
