@@ -49,6 +49,13 @@ var currentIndex = 0;
 
 
 
+  // autoplay på video 4
+  var video = document.getElementById("Video4");
+  video.onended = function() {
+    window.location.href = "spil-1.html";
+  };
+
+
 
   document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('Video2');
