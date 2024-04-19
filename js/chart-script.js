@@ -12,10 +12,9 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Billede 1', 'Billede 2'],
+        labels: ['JA TAK', 'NEJ TAK'],
         datasets: [{
-            label: 'Klikfordeling',
-            backgroundColor: ['#ff6384', '#36a2eb'],
+            backgroundColor: ['#2C2F7B', '#E474EE'],
             data: [percentImage1, percentImage2]
         }]
     },
@@ -23,3 +22,4 @@ var myChart = new Chart(ctx, {
         responsive: false
     }
 });
+
