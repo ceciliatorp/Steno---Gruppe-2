@@ -205,7 +205,7 @@ ved startstedet.*/
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
     opacity: 50%;
-    animation: moveAndRotateUran4 30s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateUran4 50s linear forwards; /*Animation bevægelse på side*/
 }
 
 @keyframes  moveAndRotateUran4 {
@@ -236,9 +236,27 @@ ved startstedet.*/
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
     opacity: 50%;
-
+    animation: moveAndRotateUran5 100s linear forwards;
 }
 
+@keyframes moveAndRotateUran5{
+    0% {
+        top: 200px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 100px;
+        left: 700px;
+        transform: rotate(360deg);
+    }
+    100%{
+        top: 300px;
+        left: 700px;
+        transform: rotate(360deg);
+    }
+}
 
 
 /****************** Stem  **********************/
