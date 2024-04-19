@@ -421,6 +421,12 @@ ved startstedet.*/
 
 /****************** cirkeldiagram  **********************/
 
+.underoverskrift2{
+    padding: 80px 50px;
+    font-size: 2.5rem;
+    font-family:"Quantico";
+    text-align: center
+}
 
 /* Stil for cirkeldiagram */
 canvas {
@@ -429,6 +435,31 @@ canvas {
     display: flex;
     justify-content: center;
 }
+
+#myChart {
+    display: block;
+    margin: 0 auto;
+    width: "600"; 
+    height: "600";
+}
+
+/* Hvis cirkel */
+#chartContainer {
+    position: relative;
+}
+
+#circleBackground {
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px; /* Lidt større end diagrammet */
+    height: 640px; /* Lidt større end diagrammet */
+    border-radius: 50%;
+    background-color: white;
+    z-index: -1; /* Sørg for, at det er bagved diagrammet */
+}
+
 
 .uran1-3 {
     position: absolute;

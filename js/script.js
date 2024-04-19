@@ -11,7 +11,9 @@ function countClick(imageNumber) {
     // Gem antallet af klik i localStorage
     localStorage.setItem('image_' + imageNumber, clicks);
     // Opdater antallet af klik på skærmen
-    document.getElementById('clickCount' + imageNumber).innerText = 'Antal klik: ' + clicks;
+    // document.getElementById('clickCount' + imageNumber).innerText = 'Antal klik: ' + clicks;
+
+    console.log('Antal klik på Billede ' + imageNumber + ': ' + clicks);
 }
 
 // Funktion til at navigere til næste side
@@ -24,7 +26,9 @@ function navigateToNextPage() {
 
 var currentIndex = 0;
     var slides = document.querySelectorAll('.slide');
-    var visibleSlides = 3; // Number of slides visible at a time
+
+    // synlige billeder af gangen
+    var visibleSlides = 3; 
 
     function moveSlider(direction) {
         if (direction === 'down') {
