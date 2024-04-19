@@ -71,11 +71,11 @@ h1, h2, h3{
 /*biguran styling including keyframes*/ 
 .biguran {
     position: absolute;
-    top: -300px; /* Afstand fra bunden af containeren */
+    top: 0px; /* Afstand fra bunden af containeren */
     left: 500px; /* Afstand fra højre kant af containeren */
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran 15s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateBiguran 20s linear forwards; /*Animation bevægelse på side*/
 }
 
 /* Antal procent definere hvor på hvor langt i "keyframen" den befinder sig
@@ -83,7 +83,7 @@ hvis der ikke er en 100%, går systemet udfra at sekvensen skal stoppe
 ved startstedet.*/
 @keyframes  moveAndRotateBiguran {
     0% {
-      top: -200px; /* Startsted fra toppen */
+      top: 0px; /* Startsted fra toppen */
       left: 500px; /* Startsted fra venstre */
       transform: rotate(0deg); /*Drjening på element*/
     }
@@ -96,7 +96,7 @@ ved startstedet.*/
 
     60% {
       top: -50px; /* Startsted fra toppen */
-      left: 1500px; /* Startsted fra venstre */
+      left: 1700px; /* Startsted fra venstre */
       transform: rotate(360deg);/*Drjening på element*/
 
     }
@@ -115,7 +115,7 @@ ved startstedet.*/
     left: 270px; /* Afstand fra højre kant af containeren */
     max-width: 70px; /* Juster størrelsen efter behov */
     max-height: 70px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran1 100s linear forwards; /*Animation bevægelse på side*/
 }
 
@@ -127,9 +127,15 @@ ved startstedet.*/
       }
   
     50%{
-        top: 500px; /* Startsted fra toppen */
-        left: 1500px; /* Startsted fra venstre */
-        transform: rotate(180deg); /*Drjening på element*/
+        top: 300px; /* Startsted fra toppen */
+        left: 1000px; /* Startsted fra venstre */
+        transform: rotate(600deg); /*Drjening på element*/
+    }
+
+    100%{
+        top: 00px; /* Startsted fra toppen */
+        left: 1000px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
     }
 }
 
@@ -140,20 +146,20 @@ ved startstedet.*/
     left: 800px; /* Afstand fra højre kant af containeren */
     max-width: 80px; /* Juster størrelsen efter behov */
     max-height: 80px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran2 90s linear forwards; /*Animation bevægelse på side*/
 
 }
 
 @keyframes  moveAndRotateUran2 {
     0% {
-        top: 0px; /* Startsted fra toppen */
+        top: 400px; /* Startsted fra toppen */
         left: 1500px; /* Startsted fra venstre */
         transform: rotate(0deg); /*Drjening på element*/
       }
   
     50%{
-        top: 300px; /* Startsted fra toppen */
+        top: 200px; /* Startsted fra toppen */
         left: 650px; /* Startsted fra venstre */
         transform: rotate(180deg); /*Drjening på element*/
     }  
@@ -172,7 +178,7 @@ ved startstedet.*/
     left: 200px; /* Afstand fra højre kant af containeren */
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran3 90s linear forwards; /*Animation bevægelse på side*/
 
 }
@@ -204,7 +210,7 @@ ved startstedet.*/
     left: 300px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran4 90s linear forwards; /*Animation bevægelse på side*/
 }
 
@@ -235,7 +241,7 @@ ved startstedet.*/
     left: 200px; /* Afstand fra højre kant af containeren */
     max-width: 70px; /* Juster størrelsen efter behov */
     max-height: 70px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran5 100s linear forwards;
 }
 
@@ -271,7 +277,7 @@ ved startstedet.*/
     left: 200px; /* Afstand fra højre kant af containeren */
     max-width: 70px; /* Juster størrelsen efter behov */
     max-height: 70px; /* Juster størrelsen efter behov */
-    opacity: 50%;
+    opacity: 40%;
     animation: moveAndRotateUran6 100s linear forwards;
 }
 
@@ -336,6 +342,28 @@ ved startstedet.*/
     right: 150px; /* Afstand fra højre kant af containeren */
     max-width: 300px; /* Juster størrelsen efter behov */
     max-height: 300px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran1-2 100s linear forwards;
+}
+
+@keyframes moveAndRotateUran1-2{
+    0% {
+        top: 0px;
+        left: 1500px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 100px;
+        left: 800px;
+        transform: rotate(360deg);
+    }
+
+    100%{
+        top: 300px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
 }
 
 .uran2-2 {
@@ -344,7 +372,30 @@ ved startstedet.*/
     left: 150px; /* Afstand fra højre kant af containeren */
     max-width: 100px; /* Juster størrelsen efter behov */
     max-height: 100px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran2-2 5s linear forwards;
 }
+
+@keyframes  moveAndRotateUran2-2 {
+    0% {
+        top: 400px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+      }
+  
+    70%{
+        top: 800px; /* Startsted fra toppen */
+        left: 300px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    100%{
+        top: 900px; /* Startsted fra toppen */
+        left: 800px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+}
+
 
 .uran3-2 {
     position: absolute;
@@ -352,6 +403,10 @@ ved startstedet.*/
     left: 900px; /* Afstand fra højre kant af containeren */
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran3-2 100 linear forwards;
+
+
 }
 
 .uran4-2 {
@@ -360,6 +415,8 @@ ved startstedet.*/
     left: 1000px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran4-2 100s linear forwards;
 }
 
 /****************** cirkeldiagram  **********************/
@@ -379,6 +436,9 @@ canvas {
     right: 150px; /* Afstand fra højre kant af containeren */
     max-width: 300px; /* Juster størrelsen efter behov */
     max-height: 300px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran6 100s linear forwards;
+
 }
 
 .uran2-3 {
@@ -387,6 +447,8 @@ canvas {
     left: 150px; /* Afstand fra højre kant af containeren */
     max-width: 100px; /* Juster størrelsen efter behov */
     max-height: 100px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran6 100s linear forwards;
 }
 
 .uran3-3 {
@@ -395,6 +457,8 @@ canvas {
     left: 900px; /* Afstand fra højre kant af containeren */
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran6 100s linear forwards;
 }
 
 .uran4-3så {
@@ -403,6 +467,8 @@ canvas {
     left: 1000px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran6 100s linear forwards;
 }
 
 
@@ -598,11 +664,14 @@ grid-row-start: 3;
 
 /* Styling af spil 2 - sammenlign energikilder */
 
+/* Spil to er opsat med css grid derfor vil følgende stykke være opdelt efter grid'ets opbygning. 
+Først kommer der det overordenede grid layout og derefter css tilhørende kolonner fra venstre mod høje. */
+
 
 
 .spil-2 {
     display: grid; /* Siden styles ved hjælp af grid */
-    grid-template-columns: 10% 45% 45%;
+    grid-template-columns: 10% 45% 45%; /* kun 10% af skærmen til slideren */
     grid-template-rows: auto;
 }
 
@@ -688,7 +757,8 @@ grid-row-start: 3;
 
 
 
-/* Styling af venstre side "Atomkraftværk" */
+/***** Styling af venstre side "Atomkraftværk" */
+/* CSS grid til opsætning af venstre side samt styling af overskriften på tilhørende side */
 
 .page-left {
     grid-column-start: 2;
@@ -704,7 +774,7 @@ grid-row-start: 3;
     padding: 3%;
 }
 
-/****** Styling af boks 1 */
+/****** Styling af boks 1 - ATOMKRAFTVÆRK OVERSKRIFT */
 .boks-1 {
     grid-column: 1 / 3; /* Span both columns */
     grid-row: 1; /* Place in the first row */
@@ -728,7 +798,6 @@ grid-row-start: 3;
     grid-column: 1 / 3;
 } 
 
-
 .sticker-1 {
     width: auto;
     height: 15vh;
@@ -736,11 +805,54 @@ grid-row-start: 3;
     grid-column: 1;
 }
 
+/***** Styling af højreside "anden energikilde" */
+/* CSS grid til opsætning af højre side samt styling af overskriften på tilhørende side */
+
+.page-right {
+    grid-column-start: 3;
+}
+
+.page-right{
+    display: inline-grid; /* in-line grid bruges til at kontrollere design af boksene inde i det store grid på siden*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 3%;
+}
+
+/****** Styling af boks 1 på højre side - OVERSKRIFT "indsæt energikilde" */
+
+.boks-1-energikilde {
+    grid-column: 1 / 3; /* Span both columns */
+    grid-row: 1; /* Place in the first row */
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5%;
+}
+
+.boks-1-energikilde h2 {
+    color: var(--green);
+    font-size: 5vh;
+    grid-row: 1;
+    grid-column: 2;
+} 
+
+.sticker-energikilde {
+    width: auto;
+    height: 15vh;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+
+/****** HER  BEGYNDER styling af de resterende grids på venstre OG højre side, da de er "ens" */
+
 /****** Styling af boks 2 */
 .boks-2 {
     grid-column-start: 1;
     grid-row-start: 2;
-    padding: 5%;
+    padding: 4%;
+    margin-left: 4vh;
 }
 
 .boks-2 h2 {
@@ -765,7 +877,7 @@ grid-row-start: 3;
 .boks-3 {
     grid-column-start: 2;
     grid-row-start: 2;
-    padding: 5%;
+    padding: 4%;
 }
 
 .boks-3 h2 {
@@ -784,7 +896,8 @@ grid-row-start: 3;
 .boks-4 {
     grid-column-start: 1;
     grid-row-start: 3;
-    padding: 5%;
+    padding: 4%;
+    margin-left: 4vh;
 }
 
 .boks-4 h2 {
@@ -799,12 +912,10 @@ grid-row-start: 3;
     grid-column-start: 2;
     grid-row-start: 3;
 }
-
-
-/* Styling af venstre side "Atomkraftværk" */
-
-.page-right {
-    grid-column-start: 3;
+.circle-wrap {
+    display: inline-block;
+    margin: 5%;
+    padding: 2% 2%;
 }
 
 
