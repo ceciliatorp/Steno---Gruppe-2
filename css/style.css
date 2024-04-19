@@ -204,9 +204,42 @@ ved startstedet.*/
     left: 300px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateUran4 15s linear forwards; /*Animation bevægelse på side*/
+    opacity: 50%;
+    animation: moveAndRotateUran4 30s linear forwards; /*Animation bevægelse på side*/
+}
+
+@keyframes  moveAndRotateUran4 {
+    0% {
+        top: 900px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+      }
+  
+    70%{
+        top: 600px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    100%{
+        top: 900px; /* Startsted fra toppen */
+        left: 800px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+}
+
+/*uran5 styling including keyframes */
+.uran5 {
+    position: absolute;
+    bottom: 70px; /* Afstand fra bunden af containeren */
+    left: 200px; /* Afstand fra højre kant af containeren */
+    max-width: 40px; /* Juster størrelsen efter behov */
+    max-height: 40px; /* Juster størrelsen efter behov */
+    opacity: 50%;
 
 }
+
+
 
 /****************** Stem  **********************/
 
