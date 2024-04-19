@@ -60,3 +60,5 @@ var currentIndex = 0;
   video.onended = function() {
     window.location.href = "spil-1.html";
   };
+
+

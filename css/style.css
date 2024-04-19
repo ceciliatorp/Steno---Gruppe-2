@@ -117,6 +117,7 @@ ved startstedet.*/
     max-height: 70px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran1 100s linear forwards; /*Animation bevægelse på side*/
+    animation-iteration-count: infinite;
 }
 
 @keyframes  moveAndRotateUran1 {
@@ -148,7 +149,7 @@ ved startstedet.*/
     max-height: 80px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran2 90s linear forwards; /*Animation bevægelse på side*/
-
+    animation-iteration-count: infinite;
 }
 
 @keyframes  moveAndRotateUran2 {
@@ -180,7 +181,7 @@ ved startstedet.*/
     max-height: 40px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran3 90s linear forwards; /*Animation bevægelse på side*/
-
+    animation-iteration-count: infinite;
 }
 
 @keyframes  moveAndRotateUran3 {
@@ -212,6 +213,7 @@ ved startstedet.*/
     max-height: 90px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran4 90s linear forwards; /*Animation bevægelse på side*/
+    animation-iteration-count: infinite;
 }
 
 @keyframes  moveAndRotateUran4 {
@@ -243,7 +245,9 @@ ved startstedet.*/
     max-height: 70px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran5 100s linear forwards;
+    animation-iteration-count: infinite;
 }
+
 
 @keyframes moveAndRotateUran5{
     0% {
@@ -279,6 +283,7 @@ ved startstedet.*/
     max-height: 70px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran6 100s linear forwards;
+    animation-iteration-count: infinite;
 }
 
 @keyframes moveAndRotateUran6{
@@ -336,6 +341,39 @@ ved startstedet.*/
     transform: scale(1.1) rotate(5deg);
 }
 
+.biguran-1 {
+    position: absolute;
+    max-width: 200px; /* Juster størrelsen efter behov */
+    max-height: 200px; /* Juster størrelsen efter behov */
+    animation: moveAndRotateBiguran-1 25s linear forwards;
+}
+
+@keyframes moveAndRotateBiguran-1{
+    0% {
+        top: 900px;
+        left: 100px;
+        transform: rotate(0deg);
+    }
+
+    30%{
+        top: 850px;
+        left: 550px;
+        transform: rotate(180deg);
+    }
+
+    70%{
+        top: 800px;
+        left: 1000px;
+        transform: rotate(260deg);
+    }
+
+    100%{
+        top: 825px;
+        left: 1650px;
+        transform: rotate(360deg);
+    }    
+}
+
 .uran1-2 {
     position: absolute;
     top: 100px; /* Afstand fra bunden af containeren */
@@ -373,7 +411,7 @@ ved startstedet.*/
     max-width: 100px; /* Juster størrelsen efter behov */
     max-height: 100px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran2-2 5s linear forwards;
+    animation: moveAndRotateUran2-2 100s linear forwards;
 }
 
 @keyframes  moveAndRotateUran2-2 {
@@ -383,30 +421,45 @@ ved startstedet.*/
         transform: rotate(0deg); /*Drjening på element*/
       }
   
-    70%{
-        top: 800px; /* Startsted fra toppen */
+    50%{
+        top: 900px; /* Startsted fra toppen */
         left: 300px; /* Startsted fra venstre */
         transform: rotate(360deg); /*Drjening på element*/
     }  
 
-    100%{
-        top: 900px; /* Startsted fra toppen */
-        left: 800px; /* Startsted fra venstre */
-        transform: rotate(0deg); /*Drjening på element*/
+    70%{
+        top: 700px;
+        left: 100px;
+        transform: rotate(0deg);
     }
 }
 
-
 .uran3-2 {
     position: absolute;
-    bottom: 80px; /* Afstand fra bunden af containeren */
-    left: 900px; /* Afstand fra højre kant af containeren */
-    max-width: 40px; /* Juster størrelsen efter behov */
-    max-height: 40px; /* Juster størrelsen efter behov */
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran3-2 100 linear forwards;
+    animation: moveAndRotateUran3-2 100s linear forwards;
+}
 
+@keyframes moveAndRotateUran3-2 {
+    0% {
+        top: 100px; /* Startsted fra toppen */
+        left: 900px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+  
+    50%{
+        top: 1000px; /* Startsted fra toppen */
+        left: 1000px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
 
+    100%{
+        top: 100px;
+        left: 1000px;
+        transform: rotate(0deg);
+    }
 }
 
 .uran4-2 {
