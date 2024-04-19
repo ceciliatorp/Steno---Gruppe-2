@@ -69,29 +69,42 @@ var currentIndex = 0;
 
 // Link til JSON + Data 
 
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    // Assuming you want to display data for the first energy source
-    const energySource = data[0];
+const btnElem = document.getElementById("kraftvark");
+const outputElem = document.querySelector(".boks-1-energikilde");
 
-    // Update energy source name and image
-    document.getElementById('energySource').textContent = energySource.energikilde;
-    document.querySelector('.sticker-energikilde').src = "img/" + energySource.energikilde_billede;
+btnElem.addEventListener("click", () => {
+    const url = "json/data.json";
 
-    // Update price
-    document.querySelector('.boks-2 h3').textContent = energySource.pris + " " + energySource.pris_enhed;
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // Assuming you want to display data for the first energy source
+            const energySource = data[0];
 
-    // Update energy text
-    document.getElementById('energyText').textContent = energySource.antal_text;
+            // Create an img element for the energy source image
+            const energyImage = document.createElement("img");
+            energyImage.classList.add("sticker-energikilde");
+            energyImage.src = "img/" + energySource.energikilde_billede;
+            energyImage.alt = energySource.energikilde;
+            outputElem.appendChild(energyImage);
 
-    // Update CO2 text
-    document.getElementById('Co2Text').textContent = energySource.co2_text;
+            // Update energy source name
+            document.getElementById('energySource').textContent = energySource.energikilde;
 
-    // Update graph (if applicable)
-    // Example: Update the percentage value in the circle graph
-    document.querySelector('.inside-circle').textContent = energySource.procent;
-  })
-  .catch(error => console.error('Error fetching data:', error));
+            // Update price
+            const priceText = document.querySelector('.boks-2 h3');
+            priceText.textContent = energySource.pris + " " + energySource.pris_enhed;
 
+            // Update energy text
+            document.getElementById('energyText').textContent = energySource.antal_text;
+
+            // Update CO2 text
+            document.getElementById('Co2Text').textContent = energySource.co2_text;
+
+            // Update graph (if applicable)
+            // Example: Update the percentage value in the circle graph
+            document.querySelector('.inside-circle').textContent = energySource.procent;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
 
