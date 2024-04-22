@@ -1219,10 +1219,27 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 .straaling h1 {
     color: var(--green);
-    font-size: 3vw;
+    font-size: 5vw;
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
+}
+
+.straaling-info{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+}
+.straaling-info h2{
+    color: white;
+    font-size: 3vw;
+}
+
+.straaling-info h3{
+    color: var(--pink);
+    font-size: 2vw;
+
 }
 
 .grid-container {
@@ -1231,7 +1248,8 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     grid-template-rows: 1fr 1fr;
     width: 80%;
     height: 80%;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .grid-item {
