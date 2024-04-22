@@ -1282,3 +1282,39 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     filter: drop-shadow(20px 20px 20px  var(--green));
     transform: scale(1.15); /* Scale effect to simulate drop shadow */
 }
+
+
+
+
+/********** Vælg side ********/
+
+. vaelg-energi h1 {
+    text-align: center;
+    color: var(--green);
+    margin: 40px;
+    font-size: 4rem;
+}
+
+. vaelg-energi h2 {
+    text-align: center;
+    color: var(--green);
+    margin: 40px;
+    font-size: 3rem;
+}
+
+.sammenlign{
+    bottom: auto;
+    margin: 150px 150px;
+    display: flex;
+    gap: 60px;
+}
+
+.sammenlign img{
+    width: 100%;
+    transition: transform 0.3s ease; /* Tilføjet overgangsegenskab for transform */
+}
+
+.sammenlign img:hover{
+    cursor: pointer;
+    transform: scale(1.1) rotate(5deg); /* Tilføjet rotation med 5 grader */
+}
