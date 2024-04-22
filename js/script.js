@@ -92,12 +92,12 @@ krafvark.addEventListener("click", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
+        console.log("Timeout function executed");
         var image = document.querySelector('.billeder-om-h1 img');
         if (image) {
             image.classList.add('stop-blitzing');
         }
-    }, 2000); // 5000 milliseconds = 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
 });
-
 
 

@@ -1335,7 +1335,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 
 .vaelg-energi h2 {
     text-align: center;
-    color: var(--green);
+    color: white;
     margin: 40px;
     font-size: 3rem;
 }
@@ -1350,6 +1350,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 .sammenlign img{
     width: 100%;
     transition: transform 0.3s ease; /* Tilføjet overgangsegenskab for transform */
+<<<<<<< Updated upstream
 }
 
 .sammenlign img:hover{
@@ -1402,3 +1403,6 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
         opacity: 0;
     }
 }
+=======
+}
+>>>>>>> Stashed changes
