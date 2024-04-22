@@ -1219,7 +1219,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 .straaling h1 {
     color: var(--green);
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
@@ -1306,14 +1306,14 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 
 /********** Vælg side ********/
 
-. vaelg-energi h1 {
+.vaelg-energi h1 {
     text-align: center;
     color: var(--green);
     margin: 40px;
     font-size: 4rem;
 }
 
-. vaelg-energi h2 {
+.vaelg-energi h2 {
     text-align: center;
     color: var(--green);
     margin: 40px;
