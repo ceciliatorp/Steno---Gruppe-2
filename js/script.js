@@ -72,7 +72,8 @@ var currentIndex = 0;
 const btnElem = document.getElementById("kraftvark");
 const outputElem = document.querySelector(".boks-1-energikilde");
 
-btnElem.addEventListener("click", () => {
+
+document.getElementById("krafvark").addEventListener("click", () => {
     const url = "json/data.json";
 
     fetch(url)
@@ -81,19 +82,12 @@ btnElem.addEventListener("click", () => {
             // Assuming you want to display data for the first energy source
             const energySource = data[0];
 
-            // Create an img element for the energy source image
-            const energyImage = document.createElement("img");
-            energyImage.classList.add("sticker-energikilde");
-            energyImage.src = "img/" + energySource.energikilde_billede;
-            energyImage.alt = energySource.energikilde;
-            outputElem.appendChild(energyImage);
-
-            // Update energy source name
+            // Update energy source name and image
             document.getElementById('energySource').textContent = energySource.energikilde;
+            document.querySelector('.sticker-energikilde').src = "img/" + energySource.energikilde_billede;
 
             // Update price
-            const priceText = document.querySelector('.boks-2 h3');
-            priceText.textContent = energySource.pris + " " + energySource.pris_enhed;
+            document.querySelector('.boks-2 h3').textContent = energySource.pris + " " + energySource.pris_enhed;
 
             // Update energy text
             document.getElementById('energyText').textContent = energySource.antal_text;
@@ -107,4 +101,3 @@ btnElem.addEventListener("click", () => {
         })
         .catch(error => console.error('Error fetching data:', error));
 });
-
