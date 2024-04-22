@@ -86,18 +86,4 @@ krafvark.addEventListener("click", function() {
 
 
 
-// JS til Vaelg html filen 
-
-// Stop med at blitze 
-
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        console.log("Timeout function executed");
-        var image = document.querySelector('.billeder-om-h1 img');
-        if (image) {
-            image.classList.add('stop-blitzing');
-        }
-    }, 5000); // 5000 milliseconds = 5 seconds
-});
-
 
