@@ -66,7 +66,7 @@ var currentIndex = 0;
         if(video4) {
             video4.play(); // Start videoen automatisk
             video4.onended = function() {
-                window.location.href = "html-anna/stem.html"; // Skift til næste HTML-side, når videoen er færdig
+                window.location.href = "spil-2.html"; // Skift til næste HTML-side, når videoen er færdig
             };
         }
     });
