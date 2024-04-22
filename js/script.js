@@ -66,7 +66,7 @@ var currentIndex = 0;
         if(video4) {
             video4.play(); // Start videoen automatisk
             video4.onended = function() {
-                window.location.href = "html-anna/stem.html"; // Skift til næste HTML-side, når videoen er færdig
+                window.location.href = "vealg.html"; // Skift til næste HTML-side, når videoen er færdig
             };
         }
     });
@@ -77,36 +77,12 @@ var currentIndex = 0;
 
 
 // Link til JSON + Data 
+const krafvarkElm = document.getElementById("krafvark");
 
-const btnElem = document.getElementById("kraftvark");
-const outputElem = document.querySelector(".boks-1-energikilde");
-
-
-document.getElementById("krafvark").addEventListener("click", () => {
-    const url = "json/data.json";
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            // Assuming you want to display data for the first energy source
-            const energySource = data[0];
-
-            // Update energy source name and image
-            document.getElementById('energySource').textContent = energySource.energikilde;
-            document.querySelector('.sticker-energikilde').src = "img/" + energySource.energikilde_billede;
-
-            // Update price
-            document.querySelector('.boks-2 h3').textContent = energySource.pris + " " + energySource.pris_enhed;
-
-            // Update energy text
-            document.getElementById('energyText').textContent = energySource.antal_text;
-
-            // Update CO2 text
-            document.getElementById('Co2Text').textContent = energySource.co2_text;
-
-            // Update graph (if applicable)
-            // Example: Update the percentage value in the circle graph
-            document.querySelector('.inside-circle').textContent = energySource.procent;
-        })
-        .catch(error => console.error('Error fetching data:', error));
+krafvark.addEventListener("click", function() {
+    const energySourceElm = document.getElementById("energySource");
+    energySourceElm.innerText = "FOSSIL BRANDSTOF";
 });
+
+
+
