@@ -86,7 +86,7 @@ h1, h2, h3{
     left: 500px; /* Afstand fra højre kant af containeren */
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran 20s linear forwards; /*Animation bevægelse på side*/
+    animation: moveAndRotateBiguran 20s linear forwards, wiggleBiguran-2 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
 }
 
 /* Antal procent definere hvor på hvor langt i "keyframen" den befinder sig
@@ -119,6 +119,15 @@ ved startstedet.*/
       }
 }
 
+@keyframes wiggleBiguran {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+    
+}
 /*uran1 styling including keyframes*/ 
 .uran1 {
     position: absolute;
@@ -356,7 +365,7 @@ ved startstedet.*/
     position: absolute;
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran-1 25s linear forwards;
+    animation: moveAndRotateBiguran-1 25s linear forwards, wiggleBiguran-1 0.5s 25s infinite alternate;
 }
 
 @keyframes moveAndRotateBiguran-1{
@@ -385,6 +394,16 @@ ved startstedet.*/
     }    
 }
 
+@keyframes wiggleBiguran-1 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+    
+}
+
 .uran1-2 {
     position: absolute;
     top: 100px; /* Afstand fra bunden af containeren */
@@ -393,6 +412,8 @@ ved startstedet.*/
     max-height: 300px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran1-2 100s linear forwards;
+    animation-iteration-count: infinite;
+
 }
 
 @keyframes moveAndRotateUran1-2{
@@ -423,6 +444,8 @@ ved startstedet.*/
     max-height: 100px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran2-2 100s linear forwards;
+    animation-iteration-count: infinite;
+
 }
 
 @keyframes  moveAndRotateUran2-2 {
@@ -451,6 +474,8 @@ ved startstedet.*/
     max-height: 100px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran3-2 100s linear forwards;
+    animation-iteration-count: infinite;
+
 }
 
 @keyframes moveAndRotateUran3-2 {
@@ -481,6 +506,8 @@ ved startstedet.*/
     max-height: 90px; /* Juster størrelsen efter behov */
     opacity: 40%;
     animation: moveAndRotateUran4-2 100s linear forwards;
+    animation-iteration-count: infinite;
+
 }
 
 
@@ -526,7 +553,38 @@ canvas {
     z-index: -1; /* Sørg for, at det er bagved diagrammet */
 }
 
+/* Styling af uran*/
 
+.biguran-2 {
+    position: absolute;
+    max-width: 200px; /* Juster størrelsen efter behov */
+    max-height: 200px; /* Juster størrelsen efter behov */
+    animation: moveAndRotateBiguran-2 25s linear forwards, wiggleBiguran-2 0.5s 25s infinite alternate;
+}
+
+@keyframes moveAndRotateBiguran-2{
+    0% {
+        top: 900px;
+        left: 100px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        top: 825px;
+        left: 1650px;
+        transform: rotate(360deg);
+    }    
+}
+
+@keyframes wiggleBiguran-2 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+    
+}
 .uran1-3 {
     position: absolute;
     top: 100px; /* Afstand fra bunden af containeren */
@@ -534,8 +592,34 @@ canvas {
     max-width: 300px; /* Juster størrelsen efter behov */
     max-height: 300px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran6 100s linear forwards;
+    animation: moveAndRotateUran1-3 90s linear forwards;
+    animation-iteration-count: infinite;
+}
 
+@keyframes moveAndRotateUran1-3{
+    0% {
+        top: 0px;
+        left: 1700px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 400px;
+        left: 1250px;
+        transform: rotate(360deg);
+    }
+
+    75%{
+        top: 600px;
+        left: 1700px;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        top: 0px;
+        left: 1700px;
+        transform: rotate(360deg);
+    }
 }
 
 .uran2-3 {
@@ -545,7 +629,33 @@ canvas {
     max-width: 100px; /* Juster størrelsen efter behov */
     max-height: 100px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran6 100s linear forwards;
+    animation: moveAndRotateUran2-3 60s linear forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes  moveAndRotateUran2-3 {
+    0% {
+        top: 100px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+      }
+  
+    30%{
+        top: 500px; /* Startsted fra toppen */
+        left: 500px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    65%{
+        top: 1000px;
+        left: 500px;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        top: 100px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(500deg); /*Drjening på element*/
+    }
 }
 
 .uran3-3 {
@@ -555,19 +665,114 @@ canvas {
     max-width: 40px; /* Juster størrelsen efter behov */
     max-height: 40px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran6 100s linear forwards;
+    animation: moveAndRotateUran3-3 80s linear forwards;
+    animation-iteration-count: infinite;
 }
 
-.uran4-3så {
+@keyframes moveAndRotateUran3-3 {
+    0% {
+        top: 1000px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+  
+    20%{
+        top: 1000px; /* Startsted fra toppen */
+        left: 1000px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    45%{
+        top: 800px; /* Startsted fra toppen */
+        left: 1700px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+
+    65%{
+        top: 200px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(180deg); /*Drjening på element*/
+    }
+
+    100%{
+        top: 800px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+}
+.uran4-3 {
     position: absolute;
     bottom: 20px; /* Afstand fra bunden af containeren */
     left: 1000px; /* Afstand fra højre kant af containeren */
     max-width: 90px; /* Juster størrelsen efter behov */
     max-height: 90px; /* Juster størrelsen efter behov */
     opacity: 40%;
-    animation: moveAndRotateUran6 100s linear forwards;
+    animation: moveAndRotateUran4-3 60s linear forwards;/* Varighed af animationen*/
+    animation-iteration-count: infinite; /* infinte gør at animationen starter forfra*/
 }
 
+@keyframes moveAndRotateUran4-3{
+    0% {
+        top: 600px;
+        left: 500px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        top: 500px;
+        left: 100px;
+        transform: rotate(360deg);
+    }
+
+    70%{
+        top: 200px;
+        left: 300px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        top: 600px;
+        left: 500px;
+        transform: rotate(0deg);
+    }
+}
+
+.uran5-3 {
+    position: absolute;
+    bottom: 80px; /* Afstand fra bunden af containeren */
+    left: 900px; /* Afstand fra højre kant af containeren */
+    max-width: 60px; /* Juster størrelsen efter behov */
+    max-height: 60px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran5-3 40s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveAndRotateUran5-3 {
+    0% {
+        top: 600px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+  
+    40%{
+        top: 1000px; /* Startsted fra toppen */
+        left: 800px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }  
+
+    45%{
+        top: 800px; /* Startsted fra toppen */
+        left: 700px; /* Startsted fra venstre */
+        transform: rotate(200deg); /*Drjening på element*/
+    }
+
+    100%{
+        top: 600px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(365deg); /*Drjening på element*/
+    }
+}
 
 /****************** Spil 1 *********************/
 
