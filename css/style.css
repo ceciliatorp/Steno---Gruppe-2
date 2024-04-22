@@ -1210,6 +1210,11 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     padding: 2% 2%;
 }
 
+/* skærmstr til video */
+.fullscreen-video {
+    width: 100vw; /* Fyld bredden af skærmen */
+    height: 100vh; /* Fyld højden af skærmen */
+}
 
 
 
