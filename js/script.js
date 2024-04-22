@@ -49,19 +49,40 @@ var currentIndex = 0;
 
 
 
-  // autoplay på video 4
-  var video = document.getElementById("Video4");
-  video.onended = function() {
-    window.location.href = "spil-1.html";
-  };
+  
 
 
+// Link til JSON + Data 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('Video2');
+const btnElem = document.getElementById("kraftvark");
+const outputElem = document.querySelector(".boks-1-energikilde");
 
-    video.addEventListener('ended', function () {
-        // Når den nuværende video er færdig, afspil næste video
-        window.location.href = 'video3.html'; // Ændr dette til navnet på den næste HTML-fil
-    });
+
+document.getElementById("krafvark").addEventListener("click", () => {
+    const url = "json/data.json";
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // Assuming you want to display data for the first energy source
+            const energySource = data[0];
+
+            // Update energy source name and image
+            document.getElementById('energySource').textContent = energySource.energikilde;
+            document.querySelector('.sticker-energikilde').src = "img/" + energySource.energikilde_billede;
+
+            // Update price
+            document.querySelector('.boks-2 h3').textContent = energySource.pris + " " + energySource.pris_enhed;
+
+            // Update energy text
+            document.getElementById('energyText').textContent = energySource.antal_text;
+
+            // Update CO2 text
+            document.getElementById('Co2Text').textContent = energySource.co2_text;
+
+            // Update graph (if applicable)
+            // Example: Update the percentage value in the circle graph
+            document.querySelector('.inside-circle').textContent = energySource.procent;
+        })
+        .catch(error => console.error('Error fetching data:', error));
 });
