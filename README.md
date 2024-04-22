@@ -1,6 +1,8 @@
 # Steno---Gruppe-2
 
+## Hvordan vi har arbejdet med json
 
+### Her har vi først hentet alle de steder i vores HTML hvor vi gerne vil have der sker en ændring
 
 ```Javascript
 const energySourceElm = document.getElementById("energySource");
@@ -15,7 +17,8 @@ const procentElm = document.getElementById("procent");
 const fillElement = document.querySelector(".fill");
 ```
 
-# Statisk - Uden json
+## Statisk - Uden json
+### Først lavede vi det manuelt hvor vi lavede vi click ever med function til hvert af de energikilder der ligger i vores slider. Det vil sige vi manuelt skulle ind og skive alle de ting der skulle ændres ind til hver eneste click event. Vi fandt så ud af vi kunne bruge json til at gøre det mere dynamisk, nemmere at rettig i i fremtiden og undgå at skulle skrive de samme ting flere gange.
 
 ```Javascript
 // Vindmølle
@@ -49,7 +52,8 @@ krafvarkElm.addEventListener("click", function() {
     fillElement.style.transform = "rotate(100deg)";
 });
 ```
-# Dynamisk - med json
+## Dynamisk - med json
+### Ved først at hente alle vores energikilder fra slideren også lave click event til hver med funktionen fetchAndDisplay(index) kunne vi definere hvor i json-filen dataen skal hentes fra.
 
 ```Javascript
 const krafvarkElm = document.getElementById("krafvark");
