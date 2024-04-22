@@ -958,6 +958,27 @@ grid-row-start: 3;
   }
 }
 
+/* Højre progress */
+.mask .fill2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #e474ee;
+  }
+  
+  .mask.full,
+  .circle .fill2 {
+    animation: fill ease-in-out 3s;
+    transform: rotate(25deg);
+  }
+  
+  @keyframes fill2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+
 /****************** Spil 2 *********************/
 
 /* Styling af spil 2 - sammenlign energikilder */

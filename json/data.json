@@ -1,5 +1,50 @@
 [
     {
+        "energikilde_billede": "kraftveark.png",
+        "energikilde": "FOSSILL BRANDSTOF",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "80%"
+    },
+    {
+        "energikilde_billede": "solceller.png",
+        "energikilde": "SOLOCELLER",
+        "pris": "800",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "3.800",
+        "antal_text": "Vindmøller vil skabe energi til hele danmark.",
+        "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
+        "procent": "10%"
+    },
+
+    {
+        "energikilde_billede": "vulkan.png",
+        "energikilde": "TERMISK",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "80%"
+    },
+    {
+        "energikilde_billede": "boelger.png",
+        "energikilde": "VANDKRÆFT",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "80%"
+    },
+    {
         "energikilde_billede": "vindmoeller.png",
         "energikilde": "VINDMØLLER",
         "pris": "800",
@@ -9,17 +54,5 @@
         "antal_text": "Vindmøller vil skabe energi til hele danmark.",
         "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
         "procent": "10%"
-    },
-
-    {
-        "energikilde_billede": "kraftveark.png",
-        "energikilde": "FOSSIL BRANDSTOF",
-        "pris": "200",
-        "pris_enhed": "Tusinde",
-        "danmark_kort": "kraftvearkkort.png",
-        "antal": "4.244",
-        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
-        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%"
     }
 ]
