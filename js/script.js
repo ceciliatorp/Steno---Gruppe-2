@@ -41,11 +41,26 @@ var currentIndex = 0;
     }
 
 
-// autoplay på spil 1
-  var video = document.getElementById("Video");
-  video.onended = function() {
-    window.location.href = "spil-1.html";
-  };
+// Autoplay for video 1
+var video1 = document.getElementById("Video1");
+video1.play (); // Start videoen automatisk
+video1.onended = function() {
+  window.location.href = "spil-1.html"; // Skift til næste HTML-side, når videoen er færdig
+};
+
+// Autoplay for video 2
+var video2 = document.getElementById("Video2");
+video2.play(); // Start videoen automatisk
+video2.onended = function() {
+  window.location.href = "straeling-i-hverdagen.html"; // Skift til næste HTML-side, når videoen er færdig
+};
+
+// Autoplay for video 3
+var video3 = document.getElementById("Video3");
+video3.play(); // Start videoen automatisk
+video3.onended = function() {
+  window.location.href = "html-anna/stem.html"; // Skift til næste HTML-side, når videoen er færdig
+};
 
 
 
