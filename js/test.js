@@ -29,7 +29,7 @@ const energyElm = document.getElementById("energy");
 const energyTextElm = document.getElementById("energyText");
 const Co2TextElm = document.getElementById("Co2Text");
 const procentElm = document.getElementById("procent");
-const fillElement = document.querySelector(".fill");
+const fillElement = document.querySelector('.page-right .fill')
 
 // // Vindmølle
 // const vindmellerElm = document.getElementById("vindmeller");
@@ -103,6 +103,7 @@ function fetchAndDisplay(index) {
             energyTextElm.innerText = `${val.antal_text}`;
             Co2TextElm.innerText = `${val.co2_text}`;
             procentElm.innerText = `${val.procent}`;
+            fillElement.style.transform = `rotate(${val.rotation})`;
         })
         .catch(error => {
             console.error('Error fetching JSON:', error);

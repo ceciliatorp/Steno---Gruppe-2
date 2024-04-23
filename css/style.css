@@ -939,24 +939,43 @@ grid-row-start: 3;
 
 /* 3rd progress bar */
 .mask .fill {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: #e474ee;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(25deg);
-}
-
-@keyframes fill{
-  0% {
-    transform: rotate(0deg);
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #e474ee;
+    transition: transform 0.5s ease-in-out; /* Tilføjelse af overgangseffekt på transform */
   }
-  100% {
+  
+  /* Til venstre side */
+  .page-left .mask.full,
+  .page-left .circle .fill {
+    animation: fill-left ease-in-out 3s;
     transform: rotate(25deg);
   }
-}
+  
+  /* Til højre side */
+  .page-right .mask.full,
+  .page-right .circle .fill {
+    animation: fill-right ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-left {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes fill-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+  
 
 /****************** Spil 2 *********************/
 
@@ -964,6 +983,7 @@ grid-row-start: 3;
 
 /* Spil to er opsat med css grid derfor vil følgende stykke være opdelt efter grid'ets opbygning. 
 Først kommer der det overordenede grid layout og derefter css tilhørende kolonner fra venstre mod høje. */
+
 
 .spil-2 {
     display: grid; /* Siden styles ved hjælp af grid */
@@ -1005,17 +1025,30 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 .slide {
     width: 100%;
-    height: 280px; /* height of each slide */
+    height: 25vh; /* height of each slide */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 100px;
 }
 
+
 #slider div img{
-    width: 50%;
+    width: 80%;
     transition: transform 0.3s ease;
+    animation: wiggleBiguran 2s infinite alternate;
 }
+
+@keyframes wiggleBiguran {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+    
+}
+
 
 #slider div img:hover{
     cursor: pointer;
@@ -1031,7 +1064,15 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
+    animation: blink 1s infinite;
 }
+
+@keyframes blink {
+    0% { opacity: 1; } /* Fully visible */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; } /* Fully visible */
+}
+
 .arrow img {
     width: 30px;
     height: 30px;
@@ -1046,9 +1087,22 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     bottom: 20px;
     transform: translateX(-50%) rotate(180deg);
 }
-.arrow:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
+
+
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 100px;
+    width: 7vh; 
+    height: 7vh; 
+    z-index: 1000;
+  }
+  
+  .material-symbols-outlined svg {
+    width: 100%; /* Fill the width of the span */
+    height: 100%; /* Fill the height of the span */
+  }
+  
 
 /***** Styling af venstre side "Atomkraftværk" */
 /* CSS grid til opsætning af venstre side samt styling af overskriften på tilhørende side */
@@ -1353,7 +1407,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 /* Styling af img om H1 og lidt css animation */
 
 .billeder-om-h1 img {
-    height: 7vh;
+    height: 8vh;
     width: auto;
 }
 
