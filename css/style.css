@@ -939,24 +939,43 @@ grid-row-start: 3;
 
 /* 3rd progress bar */
 .mask .fill {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: #e474ee;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(25deg);
-}
-
-@keyframes fill{
-  0% {
-    transform: rotate(0deg);
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #e474ee;
+    transition: transform 0.5s ease-in-out; /* Tilføjelse af overgangseffekt på transform */
   }
-  100% {
+  
+  /* Til venstre side */
+  .page-left .mask.full,
+  .page-left .circle .fill {
+    animation: fill-left ease-in-out 3s;
     transform: rotate(25deg);
   }
-}
+  
+  /* Til højre side */
+  .page-right .mask.full,
+  .page-right .circle .fill {
+    animation: fill-right ease-in-out 3s;
+    transform: rotate(150deg);
+  }
+  
+  @keyframes fill-left {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes fill-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+  
 
 /****************** Spil 2 *********************/
 

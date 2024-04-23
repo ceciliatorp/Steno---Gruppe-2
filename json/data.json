@@ -8,7 +8,8 @@
         "antal": "4.244",
         "antal_text": "Kraftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%"
+        "procent": "80%",
+        "rotation": "150deg"
     },
     {
         "energikilde_billede": "solceller.png",
@@ -19,7 +20,8 @@
         "antal": "3.800",
         "antal_text": "Vindmøller vil skabe energi til hele danmark.",
         "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
-        "procent": "10%"
+        "procent": "10%",
+        "rotation": "20deg"
     },
 
     {
@@ -31,7 +33,8 @@
         "antal": "4.244",
         "antal_text": "Kræftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%"
+        "procent": "80%",
+        "rotation": "50deg"
     },
     {
         "energikilde_billede": "boelger.png",
@@ -42,7 +45,8 @@
         "antal": "4.244",
         "antal_text": "Kræftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%"
+        "procent": "80%",
+        "rotation": "20deg"
     },
     {
         "energikilde_billede": "vindmoeller.png",
@@ -53,6 +57,7 @@
         "antal": "3.800",
         "antal_text": "Vindmøller vil skabe energi til hele danmark.",
         "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
-        "procent": "10%"
+        "procent": "10%",
+        "rotation": "20deg"
     }
 ]
