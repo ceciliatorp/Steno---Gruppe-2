@@ -33,7 +33,7 @@
         "antal": "4.244",
         "antal_text": "Kræftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%",
+        "procent": "17%",
         "rotation": "50deg"
     },
     {
@@ -45,7 +45,7 @@
         "antal": "4.244",
         "antal_text": "Kræftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
-        "procent": "80%",
+        "procent": "15%",
         "rotation": "20deg"
     },
     {
@@ -58,6 +58,6 @@
         "antal_text": "Vindmøller vil skabe energi til hele danmark.",
         "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
         "procent": "10%",
-        "rotation": "20deg"
+        "rotation": "12deg"
     }
 ]
