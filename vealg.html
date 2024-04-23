@@ -8,27 +8,31 @@
     <!-- Link til Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Square+Peg&display=swap"> 
 
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <main class="vaelg-energi">
 
-    <h1>SAMMENLIGN ENERGIKILDER</h1>
+    <div class="billeder-om-h1"> <!-- Tilføjer div om h1 for at kunne style med display:flex -->
+        <img src="img/boelger.png" alt="Lyn">
+        <h1>SAMMENLIGN ENERGIKILDER</h1>
+        <img src="img/boelger.png" alt="Lyn">
+    </div>
+
     <h2>Vælg en energikilde på skærmen for at komme videre</h2>
 
 <div class="sammenlign">
     <a href="spil-2.html"><img src="../img/boelger.png" alt=""></a>
-    <a href="spil-2.html"><img src="../img/kraftveark.png" alt=""></a>
+    <a class="sammenlign-kraftvaerk" href="spil-2.html"><img src="../img/kraftveark.png" alt=""></a>
     <a href="spil-2.html"><img src="../img/solceller.png" alt=""></a>
     <a href="spil-2.html"><img src="../img/vindmoeller.png" alt=""></a>
     <a href="spil-2.html"><img src="../img/vulkan.png" alt=""></a>
 </div>
 
-    </main>
+    </main> 
 
     
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

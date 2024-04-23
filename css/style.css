@@ -958,27 +958,6 @@ grid-row-start: 3;
   }
 }
 
-/* Højre progress */
-.mask .fill2 {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #e474ee;
-  }
-  
-  .mask.full,
-  .circle .fill2 {
-    animation: fill ease-in-out 3s;
-    transform: rotate(25deg);
-  }
-  
-  @keyframes fill2{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(25deg);
-    }
-  }
-
 /****************** Spil 2 *********************/
 
 /* Styling af spil 2 - sammenlign energikilder */
@@ -1322,14 +1301,10 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     transform: scale(1.15); /* Scale effect to simulate drop shadow */
 }
 
-
-
-
 /********** Vælg side ********/
 
 .vaelg-energi h1 {
     text-align: center;
-    color: var(--green);
     margin: 40px;
     font-size: 4rem;
 }
@@ -1357,3 +1332,52 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     cursor: pointer;
     transform: scale(1.1) rotate(5deg); /* Tilføjet rotation med 5 grader */
 }
+.sammenlign-kraftvaerk {
+    animation: bounce 6s infinite;
+}
+
+/* Tilføjet bounce effekt for at man kan se bevægelse uden hover */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Styling af img om H1 og lidt css animation */
+
+.billeder-om-h1 img {
+    height: 7vh;
+    width: auto;
+}
+
+.billeder-om-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.billeder-om-h1 img {
+    animation: blitz 0.5s linear 3;
+}
+
+@keyframes blitz {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
