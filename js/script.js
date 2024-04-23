@@ -86,3 +86,4 @@ krafvark.addEventListener("click", function() {
 
 
 
+
