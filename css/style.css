@@ -986,6 +986,8 @@ grid-row-start: 3;
 /* Spil to er opsat med css grid derfor vil følgende stykke være opdelt efter grid'ets opbygning. 
 Først kommer der det overordenede grid layout og derefter css tilhørende kolonner fra venstre mod høje. */
 
+
+
 .spil-2 {
     display: grid; /* Siden styles ved hjælp af grid */
     grid-template-columns: 10% 45% 45%; /* kun 10% af skærmen til slideren */
@@ -1026,17 +1028,30 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 .slide {
     width: 100%;
-    height: 280px; /* height of each slide */
+    height: 30vh; /* height of each slide */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 100px;
 }
 
+
 #slider div img{
-    width: 50%;
+    width: 70%;
     transition: transform 0.3s ease;
+    animation: wiggleBiguran 1.5s infinite alternate;
 }
+
+@keyframes wiggleBiguran {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+    
+}
+
 
 #slider div img:hover{
     cursor: pointer;
@@ -1069,6 +1084,16 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 .arrow:hover {
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 /***** Styling af venstre side "Atomkraftværk" */
@@ -1394,7 +1419,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 /* Styling af img om H1 og lidt css animation */
 
 .billeder-om-h1 img {
-    height: 7vh;
+    height: 8vh;
     width: auto;
 }
 
