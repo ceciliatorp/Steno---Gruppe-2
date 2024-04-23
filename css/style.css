@@ -86,7 +86,7 @@ h1, h2, h3{
     left: 500px; /* Afstand fra højre kant af containeren */
     max-width: 200px; /* Juster størrelsen efter behov */
     max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran 20s linear forwards, wiggleBiguran-2 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
+    animation: moveAndRotateBiguran 20s linear forwards, wiggleBiguran 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
 }
 
 /* Antal procent definere hvor på hvor langt i "keyframen" den befinder sig
@@ -1086,8 +1086,6 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     transform: translateX(-50%) rotate(180deg);
 }
 
-
-
 .material-symbols-outlined {
     position: absolute;
     top: 100px;
@@ -1263,6 +1261,27 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 
 /******Styling af stårling i hverdagen ******/
+.biguranx {
+    position: absolute;
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+    animation: moveAndRotateBiguranx 20s linear forwards, wiggleBiguran-2 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
+}
+
+@keyframes  moveAndRotateBiguranx {
+    0% {
+      top: 0px; /* Startsted fra toppen */
+      left: 15000px; /* Startsted fra venstre */
+      transform: rotate(0deg); /*Drjening på element*/
+    }
+
+    100% {
+        top: 920px; /* Startsted fra toppen */
+        left: 1700px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+      }
+}
+
 .straaling {
     display: flex;
     justify-content: center;
@@ -1298,10 +1317,10 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    width: 80%;
-    height: 80%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 60%;
+    height: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .grid-item {
