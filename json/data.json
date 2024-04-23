@@ -1,19 +1,19 @@
 [
     {
         "energikilde_billede": "kraftveark.png",
-        "energikilde": "FOSSILL BRANDSTOF",
+        "energikilde": "FOSSILT BRANDSTOF",
         "pris": "200",
         "pris_enhed": "Tusinde",
         "danmark_kort": "kraftvearkkort.png",
         "antal": "4.244",
-        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "antal_text": "Kraftværker vil skabe energi til hele danmark.",
         "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
         "procent": "80%",
         "rotation": "150deg"
     },
     {
         "energikilde_billede": "solceller.png",
-        "energikilde": "SOLOCELLER",
+        "energikilde": "SOLCELLER",
         "pris": "800",
         "pris_enhed": "Tusinde",
         "danmark_kort": "kraftvearkkort.png",
@@ -38,7 +38,7 @@
     },
     {
         "energikilde_billede": "boelger.png",
-        "energikilde": "VANDKRÆFT",
+        "energikilde": "VANDKRAFT",
         "pris": "200",
         "pris_enhed": "Tusinde",
         "danmark_kort": "kraftvearkkort.png",

@@ -985,7 +985,6 @@ grid-row-start: 3;
 Først kommer der det overordenede grid layout og derefter css tilhørende kolonner fra venstre mod høje. */
 
 
-
 .spil-2 {
     display: grid; /* Siden styles ved hjælp af grid */
     grid-template-columns: 10% 45% 45%; /* kun 10% af skærmen til slideren */
@@ -1037,7 +1036,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 #slider div img{
     width: 80%;
     transition: transform 0.3s ease;
-    animation: wiggleBiguran 1.5s infinite alternate;
+    animation: wiggleBiguran 2s infinite alternate;
 }
 
 @keyframes wiggleBiguran {
@@ -1065,7 +1064,15 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
+    animation: blink 1s infinite;
 }
+
+@keyframes blink {
+    0% { opacity: 1; } /* Fully visible */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; } /* Fully visible */
+}
+
 .arrow img {
     width: 30px;
     height: 30px;
@@ -1080,25 +1087,14 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     bottom: 20px;
     transform: translateX(-50%) rotate(180deg);
 }
-.arrow:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
 
 
-/* .material-symbols-outlined {
-  color: white;
-  position: absolute;
-
-  width: 400px;
-  size: 500px;
-  z-index: 1000;
-} */
 
 .material-symbols-outlined {
-    color: white; /* Fill color */
     position: absolute;
-    width: 400px; /* Width of the span */
-    height: 400px; /* Height of the span */
+    top: 100px;
+    width: 7vh; 
+    height: 7vh; 
     z-index: 1000;
   }
   
