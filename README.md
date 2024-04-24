@@ -2,6 +2,9 @@
 
 ## Hvordan vi har arbejdet med json
 
+![færdig sammenlignings spil](img/readme/sammenlign.png)
+
+
 ### Her har vi først hentet alle de steder i vores HTML hvor vi gerne vil have der sker en ændring
 
 ```Javascript
