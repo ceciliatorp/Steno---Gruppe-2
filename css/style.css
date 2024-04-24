@@ -1421,6 +1421,83 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     transform: scale(1.15); /* Scale effect to simulate drop shadow */
 }
 
+.uran1-4 {
+    position: absolute;
+    top: 100px; /* Afstand fra bunden af containeren */
+    right: 150px; /* Afstand fra højre kant af containeren */
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran1-4 80s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveAndRotateUran1-4{
+    0%, 100% {
+        top: 0px;
+        left: 1500px;
+        transform: rotate(0deg);
+    }
+
+    
+    65%{
+        top: 800px;
+        left: 1500px;
+        transform: rotate(360deg);
+    }
+}
+
+.uran2-4 {
+    position: absolute;
+    top: 500px; /* Afstand fra bunden af containeren */
+    left: 150px; /* Afstand fra højre kant af containeren */
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran2-4 80s linear forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes  moveAndRotateUran2-4 {
+    0%, 100% {
+        top: 100px; /* Startsted fra toppen */
+        left: 100px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+
+    65%{
+        top: 950px;
+        left: 250px;
+        transform: rotate(180deg);
+    }
+
+}
+
+.uran3-4 {
+    position: absolute;
+    bottom: 80px; /* Afstand fra bunden af containeren */
+    left: 900px; /* Afstand fra højre kant af containeren */
+    max-width: 40px; /* Juster størrelsen efter behov */
+    max-height: 40px; /* Juster størrelsen efter behov */
+    opacity: 40%;
+    animation: moveAndRotateUran3-4 80s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveAndRotateUran3-4 {
+    0%, 100% {
+        top: 900px; /* Startsted fra toppen */
+        left: 1700px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
+    }
+  
+    65%{
+        top: 100px; /* Startsted fra toppen */
+        left: 1500px; /* Startsted fra venstre */
+        transform: rotate(180deg); /*Drjening på element*/
+    }
+
+}
+
 /********** Vælg side ********/
 .vaelg-energi h1 {
     text-align: center;
