@@ -5,7 +5,7 @@
 // Funktion til at tælle klik på billederne
 function countClick(imageNumber) {
     // Hent det aktuelle antal klik fra localStorage
-    var clicks = localStorage.getItem('image_' + imageNumber);
+    let clicks = localStorage.getItem('image_' + imageNumber);
     // Hvis der ikke er nogen klik endnu, sæt antallet til 1, ellers inkrementer det
     clicks = clicks ? parseInt(clicks) + 1 : 1;
     // Gem antallet af klik i localStorage
@@ -22,29 +22,10 @@ function navigateToNextPage() {
 }
 
 
-// Slider
-
-var currentIndex = 0;
-    var slides = document.querySelectorAll('.slide');
-
-    // synlige billeder af gangen
-    var visibleSlides = 3; 
-
-    function moveSlider(direction) {
-        if (direction === 'down') {
-            currentIndex = (currentIndex + 1) % (slides.length - visibleSlides + 1);
-        } else if (direction === 'up') {
-            currentIndex = Math.max(0, currentIndex - 1);
-        }
-        var offset = currentIndex * -100 / visibleSlides + '%';
-        document.getElementById('slider').style.top = offset;
-    }
-
-
     
     document.addEventListener("DOMContentLoaded", function() {
         // Autoplay for video 1
-        var video1 = document.getElementById("video1");
+        let video1 = document.getElementById("video1");
         if(video1) {
             video1.play(); // Start videoen automatisk
             video1.onended = function() {
@@ -53,7 +34,7 @@ var currentIndex = 0;
         }
     
         // Autoplay for video 2
-        var video2 = document.getElementById("video2");
+        let video2 = document.getElementById("video2");
         if(video2) {
             video2.play(); // Start videoen automatisk
             video2.onended = function() {
@@ -62,7 +43,7 @@ var currentIndex = 0;
         }
     
         // Autoplay for video 4
-        var video4 = document.getElementById("video4");
+        let video4 = document.getElementById("video4");
         if(video4) {
             video4.play(); // Start videoen automatisk
             video4.onended = function() {

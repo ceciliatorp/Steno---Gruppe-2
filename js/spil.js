@@ -3,11 +3,11 @@
 
 // Slider
 
-var currentIndex = 0;
-    var slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+    let slides = document.querySelectorAll('.slide');
 
     // synlige billeder af gangen
-    var visibleSlides = 3; 
+    let visibleSlides = 3; 
 
     function moveSlider(direction) {
         if (direction === 'down') {
@@ -15,7 +15,7 @@ var currentIndex = 0;
         } else if (direction === 'up') {
             currentIndex = Math.max(0, currentIndex - 1);
         }
-        var offset = currentIndex * -100 / visibleSlides + '%';
+        let offset = currentIndex * -100 / visibleSlides + '%';
         document.getElementById('slider').style.top = offset;
     }
 
@@ -30,6 +30,7 @@ const energyTextElm = document.getElementById("energyText");
 const Co2TextElm = document.getElementById("Co2Text");
 const procentElm = document.getElementById("procent");
 const fillElement = document.querySelector('.page-right .fill')
+const circleElement = document.querySelector('.page-right .circle .fill')
 
 // // Vindmølle
 // const vindmellerElm = document.getElementById("vindmeller");
@@ -103,7 +104,14 @@ function fetchAndDisplay(index) {
             energyTextElm.innerText = `${val.antal_text}`;
             Co2TextElm.innerText = `${val.co2_text}`;
             procentElm.innerText = `${val.procent}`;
+
+           // Fjern den statiske rotasjonen fra CSS
+            fillElement.style.animation = `fill-right ease-in-out 3s`;
+            circleElement.style.animation = `fill-right ease-in-out 3s`;
+
+            // Oppdater rotasjonsverdien basert på verdien fra JSON
             fillElement.style.transform = `rotate(${val.rotation})`;
+            circleElement.style.transform = `rotate(${val.rotation})`;
         })
         .catch(error => {
             console.error('Error fetching JSON:', error);
