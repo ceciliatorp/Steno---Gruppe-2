@@ -574,25 +574,25 @@ canvas {
 
 /* Styling af uran*/
 
-.biguran-2 {
+.biguranxx {
     position: absolute;
-    max-width: 200px; /* Juster størrelsen efter behov */
-    max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran-2 25s linear forwards, wiggleBiguran-2 0.5s 25s infinite alternate;
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+    animation: moveAndRotateBiguranxx 20s linear forwards, wiggleBiguran-2 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
 }
 
-@keyframes moveAndRotateBiguran-2{
+@keyframes  moveAndRotateBiguranxx {
     0% {
-        top: 900px;
-        left: 100px;
-        transform: rotate(0deg);
+      top: 0px; /* Startsted fra toppen */
+      left: 1500px; /* Startsted fra venstre */
+      transform: rotate(0deg); /*Drjening på element*/
     }
 
-    100%{
-        top: 825px;
-        left: 1650px;
-        transform: rotate(360deg);
-    }    
+    100% {
+        top: 820px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }
 }
 
 @keyframes wiggleBiguran-2 {
