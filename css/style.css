@@ -107,14 +107,14 @@ ved startstedet.*/
 
     60% {
       top: -50px; /* Startsted fra toppen */
-      left: 1700px; /* Startsted fra venstre */
+      left: 1500px; /* Startsted fra venstre */
       transform: rotate(360deg);/*Drjening på element*/
 
     }
     
     100% {
-        top: 830px; /* Startsted fra toppen */
-        left: 1650px; /* Startsted fra venstre */
+        top: 750px; /* Startsted fra toppen */
+        left: 1550px; /* Startsted fra venstre */
         transform: rotate(0deg); /*Drjening på element*/
       }
 }
@@ -798,7 +798,7 @@ canvas {
 /* Styling af Spil 1 */
 
 .spil-1 {
-    margin: 40px, 20px;
+    margin: 40px 20px;
     padding: 2%;
 }
 
@@ -1292,15 +1292,15 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 @keyframes  moveAndRotateBiguranx {
     0% {
       top: 0px; /* Startsted fra toppen */
-      left: 15000px; /* Startsted fra venstre */
+      left: 1500px; /* Startsted fra venstre */
       transform: rotate(0deg); /*Drjening på element*/
     }
 
     100% {
-        top: 920px; /* Startsted fra toppen */
-        left: 1700px; /* Startsted fra venstre */
-        transform: rotate(0deg); /*Drjening på element*/
-      }
+        top: 850px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }
 }
 
 .straaling {
@@ -1309,6 +1309,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     align-items: center;
     flex-direction: column;
 }
+
 .straaling h1 {
     color: var(--green);
     font-size: 4vw;
@@ -1394,7 +1395,6 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
 }
 
 /********** Vælg side ********/
-
 .vaelg-energi h1 {
     text-align: center;
     margin: 40px;
