@@ -58,6 +58,72 @@ krafvarkElm.addEventListener("click", function() {
 ## Dynamisk - med json
 ### Ved først at hente alle vores energikilder fra slideren også lave click event til hver med funktionen fetchAndDisplay(index) kunne vi definere hvor i json-filen dataen skal hentes fra.
 
+```json
+[
+    {
+        "energikilde_billede": "kraftveark.png",
+        "energikilde": "FOSSILT BRANDSTOF",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kraftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "80%",
+        "rotation": "150deg"
+    },
+    {
+        "energikilde_billede": "solceller.png",
+        "energikilde": "SOLCELLER",
+        "pris": "800",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "3.800",
+        "antal_text": "Vindmøller vil skabe energi til hele danmark.",
+        "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
+        "procent": "10%",
+        "rotation": "20deg"
+    },
+
+    {
+        "energikilde_billede": "vulkan.png",
+        "energikilde": "TERMISK",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "17%",
+        "rotation": "50deg"
+    },
+    {
+        "energikilde_billede": "boelger.png",
+        "energikilde": "VANDKRAFT",
+        "pris": "200",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "kraftvearkkort.png",
+        "antal": "4.244",
+        "antal_text": "Kræftværker vil skabe energi til hele danmark.",
+        "co2_text": "Co2 udledningen sker løbende som afbrændningen sker.",
+        "procent": "15%",
+        "rotation": "20deg"
+    },
+    {
+        "energikilde_billede": "vindmoeller.png",
+        "energikilde": "VINDMØLLER",
+        "pris": "800",
+        "pris_enhed": "Tusinde",
+        "danmark_kort": "vindmøllekort.png",
+        "antal": "3.800",
+        "antal_text": "Vindmøller vil skabe energi til hele danmark.",
+        "co2_text": "Størstedelen af Co2 udledningen udledes under oprettelsen.",
+        "procent": "10%",
+        "rotation": "1deg"
+    }
+]
+```
+
 ```Javascript
 const krafvarkElm = document.getElementById("krafvark");
 const salcelleElm = document.getElementById("salcelle");
