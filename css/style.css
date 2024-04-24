@@ -577,10 +577,9 @@ canvas {
 #myChart {
     display: flex;
     justify-content: left;
-    /* margin: 0 auto; */
     margin: 0 200px;
-    width: "400"; 
-    height: "400";
+    /*width: "400"; */
+    /*height: "400";*/
 }
 
 /* Hvid cirkel */
@@ -590,8 +589,7 @@ canvas {
 
 #circleBackground {
     position: absolute;
-    top: -70%;
-    /* left: 50%; */
+    top: 320px;
     left: 500px;
     transform: translate(-50%, -50%);
     width: 650px; /* Lidt større end diagrammet */
@@ -602,16 +600,33 @@ canvas {
 }
 
 .cirkeldiagram-h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     color: var(--pink);
     text-align: center;
     z-index: 1000;
     position: absolute;
     top: 400px;
-    left: 960px;
+    left: 900px;
 }
 
+.ord{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+#nejtak{
+    color: var(--pink);
+}
+
+#jatak{
+    color: var(--green);
+}
 /* Styling af uran*/
 
 .biguranxx {
