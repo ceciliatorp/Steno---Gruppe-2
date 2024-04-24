@@ -73,17 +73,4 @@ var currentIndex = 0;
 
 
 
-  
-
-
-// Link til JSON + Data 
-const krafvarkElm = document.getElementById("krafvark");
-
-krafvark.addEventListener("click", function() {
-    const energySourceElm = document.getElementById("energySource");
-    energySourceElm.innerText = "FOSSIL BRANDSTOF";
-});
-
-
-
 

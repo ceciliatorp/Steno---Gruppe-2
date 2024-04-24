@@ -14,7 +14,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['JA TAK', 'NEJ TAK'],
         datasets: [{
-            backgroundColor: ['#2C2F7B', '#E474EE'],
+            backgroundColor: ['#D0FE1A', '#E474EE'],
             data: [percentImage1, percentImage2]
         }]
     },
