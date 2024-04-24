@@ -341,17 +341,19 @@ ved startstedet.*/
 }
 
 .jatak{
-    background: #E474EE;
+    font-weight: bold;
+    color: #D0FE1A;
     position: absolute;
-    left: 510px;
+    left: 480px;
     padding: 5px;
     border-radius: 5%;
     font-size: 1.4rem;
 }
 .nejtak{
-    background: #E474EE;
+    font-weight: bold;
+    color: #D0FE1A;
     position: absolute;
-    left: 1210px;
+    left: 1180px;
     padding: 5px;
     border-radius: 5%;
     font-size: 1.4rem;
