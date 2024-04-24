@@ -656,28 +656,16 @@ canvas {
 }
 
 @keyframes moveAndRotateUran1-3{
-    0% {
+    0%, 100% {
         top: 0px;
-        left: 1700px;
+        left: 1400px;
         transform: rotate(0deg);
     }
 
-    50%{
-        top: 400px;
-        left: 1250px;
-        transform: rotate(360deg);
-    }
-
-    75%{
-        top: 600px;
-        left: 1700px;
+    65%{
+        top: 900px;
+        left: 1200px;
         transform: rotate(180deg);
-    }
-
-    100%{
-        top: 0px;
-        left: 1700px;
-        transform: rotate(360deg);
     }
 }
 
@@ -692,28 +680,16 @@ canvas {
     animation-iteration-count: infinite;
 }
 @keyframes  moveAndRotateUran2-3 {
-    0% {
-        top: 100px; /* Startsted fra toppen */
-        left: 100px; /* Startsted fra venstre */
-        transform: rotate(0deg); /*Drjening på element*/
-      }
-  
-    30%{
+    0%, 100% {
         top: 500px; /* Startsted fra toppen */
-        left: 500px; /* Startsted fra venstre */
-        transform: rotate(360deg); /*Drjening på element*/
-    }  
-
-    65%{
-        top: 1000px;
-        left: 500px;
-        transform: rotate(180deg);
+        left: 800px; /* Startsted fra venstre */
+        transform: rotate(0deg); /*Drjening på element*/
     }
-
-    100%{
-        top: 100px; /* Startsted fra toppen */
-        left: 100px; /* Startsted fra venstre */
-        transform: rotate(500deg); /*Drjening på element*/
+  
+    65%{
+        top: 100px;
+        left: 1400px;
+        transform: rotate(180deg);
     }
 }
 
@@ -771,29 +747,18 @@ canvas {
 }
 
 @keyframes moveAndRotateUran4-3{
-    0% {
-        top: 600px;
-        left: 500px;
+    0%, 100% {
+        top: 850px;
+        left: 1200px;
         transform: rotate(0deg);
     }
 
     50%{
-        top: 500px;
-        left: 100px;
+        top: 600px;
+        left: 800px;
         transform: rotate(360deg);
     }
 
-    70%{
-        top: 200px;
-        left: 300px;
-        transform: rotate(0deg);
-    }
-
-    100%{
-        top: 600px;
-        left: 500px;
-        transform: rotate(0deg);
-    }
 }
 
 .uran5-3 {
@@ -808,29 +773,19 @@ canvas {
 }
 
 @keyframes moveAndRotateUran5-3 {
-    0% {
-        top: 600px; /* Startsted fra toppen */
+    0%, 100% {
+        top: 900px; /* Startsted fra toppen */
         left: 100px; /* Startsted fra venstre */
         transform: rotate(0deg); /*Drjening på element*/
     }
   
-    40%{
-        top: 1000px; /* Startsted fra toppen */
-        left: 800px; /* Startsted fra venstre */
-        transform: rotate(360deg); /*Drjening på element*/
-    }  
-
-    45%{
+    50%{
         top: 800px; /* Startsted fra toppen */
-        left: 700px; /* Startsted fra venstre */
+        left: 1300px; /* Startsted fra venstre */
         transform: rotate(200deg); /*Drjening på element*/
     }
 
-    100%{
-        top: 600px; /* Startsted fra toppen */
-        left: 100px; /* Startsted fra venstre */
-        transform: rotate(365deg); /*Drjening på element*/
-    }
+    
 }
 
 /****************** Spil 1 *********************/
