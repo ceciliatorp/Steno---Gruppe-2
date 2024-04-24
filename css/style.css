@@ -358,6 +358,18 @@ ved startstedet.*/
 }
 
 /* CSS til styling af billeder og andre elementer */
+
+#image1 {
+    height: auto;
+    width: 400;
+    border-image: url(border.png) 30 round;
+}
+
+#image2 {
+    height: auto;
+    width: 400;
+}
+
 .stemme{
     display: flex;
     flex-direction: row;
@@ -373,10 +385,25 @@ ved startstedet.*/
     transition: transform 0.3s ease;
 }
 
-.stemme img:hover{
+.stemme img:active {
+    animation: zoomIn 0.3s;
+    filter: drop-shadow(20px 20px 20px  var(--green));
+    transform: scale(1.15); 
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* .stemme img:hover{
     cursor: pointer;
     transform: scale(1.1) rotate(5deg);
-}
+} */
 
 .biguran-1 {
     position: absolute;
@@ -580,25 +607,25 @@ canvas {
 
 /* Styling af uran*/
 
-.biguran-2 {
+.biguranxx {
     position: absolute;
-    max-width: 200px; /* Juster størrelsen efter behov */
-    max-height: 200px; /* Juster størrelsen efter behov */
-    animation: moveAndRotateBiguran-2 25s linear forwards, wiggleBiguran-2 0.5s 25s infinite alternate;
+    max-width: 100px; /* Juster størrelsen efter behov */
+    max-height: 100px; /* Juster størrelsen efter behov */
+    animation: moveAndRotateBiguranxx 20s linear forwards, wiggleBiguran-2 0.5s 22s infinite alternate; /*Animation bevægelse på side*/
 }
 
-@keyframes moveAndRotateBiguran-2{
+@keyframes  moveAndRotateBiguranxx {
     0% {
-        top: 900px;
-        left: 100px;
-        transform: rotate(0deg);
+      top: 0px; /* Startsted fra toppen */
+      left: 1500px; /* Startsted fra venstre */
+      transform: rotate(0deg); /*Drjening på element*/
     }
 
-    100%{
-        top: 825px;
-        left: 1650px;
-        transform: rotate(360deg);
-    }    
+    100% {
+        top: 820px; /* Startsted fra toppen */
+        left: 1600px; /* Startsted fra venstre */
+        transform: rotate(360deg); /*Drjening på element*/
+    }
 }
 
 @keyframes wiggleBiguran-2 {
