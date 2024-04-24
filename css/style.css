@@ -575,13 +575,15 @@ canvas {
 }
 
 #myChart {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    /* margin: 0 auto; */
+    margin: 0 200px;
     width: "400"; 
     height: "400";
 }
 
-/* Hvis cirkel */
+/* Hvid cirkel */
 #chartContainer {
     position: relative;
 }
@@ -589,22 +591,25 @@ canvas {
 #circleBackground {
     position: absolute;
     top: -70%;
-    left: 50%;
+    /* left: 50%; */
+    left: 500px;
     transform: translate(-50%, -50%);
-    width: 640px; /* Lidt større end diagrammet */
-    height: 640px; /* Lidt større end diagrammet */
+    width: 650px; /* Lidt større end diagrammet */
+    height: 650px; /* Lidt større end diagrammet */
     border-radius: 50%;
     background-color: white;
     z-index: -1; /* Sørg for, at det er bagved diagrammet */
 }
 
 .cirkeldiagram-h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--pink);
     text-align: center;
     z-index: 1000;
     position: absolute;
-    top: 900px;
-    left: 630px;
+    top: 400px;
+    left: 960px;
 }
 
 /* Styling af uran*/
