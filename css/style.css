@@ -340,6 +340,17 @@ ved startstedet.*/
     text-align: center;
 }
 
+.jatak{
+    background: #E474EE;
+    position: absolute;
+    left: 400px;
+}
+.nejtak{
+    background: #E474EE;
+    position: absolute;
+    left: 1100px;
+}
+
 /* CSS til styling af billeder og andre elementer */
 .stemme{
     display: flex;
@@ -347,7 +358,7 @@ ved startstedet.*/
     justify-content: center;
     gap: 300px;
     height: 400px;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .stemme img {
