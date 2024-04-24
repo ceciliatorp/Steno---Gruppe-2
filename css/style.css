@@ -1307,7 +1307,7 @@ Først kommer der det overordenede grid layout og derefter css tilhørende kolon
     }
 
     100% {
-        top: 850px; /* Startsted fra toppen */
+        top: 800px; /* Startsted fra toppen */
         left: 1600px; /* Startsted fra venstre */
         transform: rotate(360deg); /*Drjening på element*/
     }
