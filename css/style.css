@@ -27,8 +27,8 @@ h1, h2, h3{
 }
 
 .underoverskrift{
-    padding: 20px 50px;
-    font-size: 1.2rem;
+    padding: 0px 50px 40px 50px;
+    font-size: 1.5rem;
     font-family:"Quantico";
 }
 
@@ -341,14 +341,22 @@ ved startstedet.*/
 }
 
 .jatak{
-    background: #E474EE;
+    font-weight: bold;
+    color: #D0FE1A;
     position: absolute;
-    left: 400px;
+    left: 480px;
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 1.4rem;
 }
 .nejtak{
-    background: #E474EE;
+    font-weight: bold;
+    color: #D0FE1A;
     position: absolute;
-    left: 1100px;
+    left: 1180px;
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 1.4rem;
 }
 
 /* CSS til styling af billeder og andre elementer */
@@ -370,7 +378,7 @@ ved startstedet.*/
     justify-content: center;
     gap: 300px;
     height: 400px;
-    margin: 50px 0;
+    margin: 65px 0;
 }
 
 .stemme img {
